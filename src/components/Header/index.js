@@ -3,7 +3,17 @@ import "./index.css";
 function Header() {
   return (
     <div>
-      <header className="header">This is Header Component</header>;
+      <header>
+        <nav className="Navbar">
+          <h1>GS</h1>
+          <ul>
+            <li>About me</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+            <li>Resume</li>
+          </ul>
+        </nav>
+      </header>
     </div>
   );
 }
