@@ -4,10 +4,15 @@
   align-items: center;
   justify-content: space-around;
   /* font-size: 18px; */
-  color: red;
+  color: white;
 }
 ul {
   display: flex;
   flex-direction: row;
+  margin: 10px 5px;
   list-style: none;
+  font-size: 20px;
+}
+ul > li {
+  margin: 5px 10px;
 }

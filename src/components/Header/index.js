@@ -7,7 +7,7 @@ function Header() {
         <nav className="Navbar">
           <h1>GS</h1>
           <ul>
-            <li>About me</li>
+            <li>About</li>
             <li>Portfolio</li>
             <li>Contact</li>
             <li>Resume</li>
