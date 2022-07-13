@@ -7,10 +7,18 @@ function Header() {
         <nav className="Navbar">
           <h1>GS</h1>
           <ul>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-            <li>Resume</li>
+            <li>
+              <a href="https://www.google.com/">About</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/">Portfolio</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/">Contact</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/">Resume</a>
+            </li>
           </ul>
         </nav>
       </header>
