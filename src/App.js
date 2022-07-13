@@ -7,10 +7,11 @@ function App() {
     <div className="App">
       <Header></Header>
       <section className="section">
-        <h1>Projects</h1>
+        <h1 className="Projects">Projects</h1>
         <Project></Project>
       </section>
       <Footer></Footer>
+      <script src="https://cdn.tailwindcss.com"></script>
     </div>
   );
 }
