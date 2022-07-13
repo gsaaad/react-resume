@@ -1,0 +1,6 @@
+footer {
+  font-size: 30px;
+  height: 50px;
+  border-top: 5px solid #00aeff;
+  background-image: linear-gradient(black, #00aeff);
+}
