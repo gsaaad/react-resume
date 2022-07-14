@@ -11,6 +11,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
+.Projects {
+  font-size: 30px;
+  color: white;
+}
 .footer {
   min-height: 100vh;
   display: flex;

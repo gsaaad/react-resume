@@ -25,7 +25,7 @@ article {
   justify-content: center;
 }
 article > h2 {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid hsl(207, 100%, 56%);
 }
 p {
   font-size: 18.5px;
@@ -38,7 +38,7 @@ p {
   height: 40rem;
   position: relative;
   border-radius: 5px;
-  cursor: pointer;
+
   filter: drop-shadow(0 0 1.5rem hsl(207, 100%, 56%));
 }
 .card:before {
@@ -55,7 +55,17 @@ p {
   position: absolute;
 
   animation: spin 3s linear infinite;
-  z-index: -1;
+  z-index: -2;
+}
+.project-title {
+  font-size: 30px;
+  color: rgb(0, 98, 218);
+  text-shadow: 0.25px 0.25px 0.25px hsl(207, 100%, 56%), 3px 3px 3px #55038b;
+}
+.descriptionStack {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px black;
 }
 .card::after {
   position: absolute;
