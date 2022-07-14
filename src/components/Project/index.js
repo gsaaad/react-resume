@@ -59,6 +59,7 @@ function Project() {
 
   return (
     <div>
+      <h1 className="Projects">Projects</h1>
       {projects.map(({ Name, Description, Stack, Repo, AppLink, image }) => (
         <article className="card" style={{ margin: "150px 0px" }}>
           <a href={AppLink}>

@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<DocumentFragment>
+  <div>
+    <article
+      class="card"
+      style="margin: 150px 0px;"
+    >
+      <a
+        href="https://gsaaad.github.io/DineInside/"
+      >
+        <img
+          alt=""
+          src="DineIn.png"
+          style="width: 100%; border-radius: 5px; padding-top: 30px;"
+        />
+      </a>
+      <div
+        class="Repo-Deploy"
+      >
+        <a
+          href="https://gsaaad.github.io/DineInside/"
+        />
+        <a
+          href="https://github.com/gsaaad/DineInside"
+        >
+          <img
+            alt=""
+            src="github-brands.svg"
+            style="width: 10%; height: 10%; margin: 0px 50px;"
+          />
+        </a>
+        <a
+          href="https://gsaaad.github.io/DineInside/"
+        >
+          <img
+            alt=""
+            src="arrow-up-right-from-square-solid.svg"
+            style="width: 10%; height: 10%; margin: 0px 50px;"
+          />
+        </a>
+      </div>
+      <h2
+        class="project-title"
+      >
+        DineIn
+      </h2>
+      <p
+        class="descriptionStack"
+      >
+         This application fulfills the needs of users at home. Enhance your meals by having the restaurant experience at the comfort of your home. DineIn lets users get random drink from a selection of cocktails, as well as a meal to enjoy that with.
+      </p>
+      <p
+        class="descriptionStack"
+      >
+        Stack: HTML, CSS, JavaScript, Tailwind CSS, JQUERY
+      </p>
+    </article>
+    <article
+      class="card"
+      style="margin: 150px 0px;"
+    >
+      <a
+        href="https://immense-sea-90510.herokuapp.com/"
+      >
+        <img
+          alt=""
+          src="JackedInTheBoxPreview.png"
+          style="width: 100%; border-radius: 5px; padding-top: 30px;"
+        />
+      </a>
+      <div
+        class="Repo-Deploy"
+      >
+        <a
+          href="https://immense-sea-90510.herokuapp.com/"
+        />
+        <a
+          href="https://github.com/gsaaad/JackedInTheBox"
+        >
+          <img
+            alt=""
+            src="github-brands.svg"
+            style="width: 10%; height: 10%; margin: 0px 50px;"
+          />
+        </a>
+        <a
+          href="https://immense-sea-90510.herokuapp.com/"
+        >
+          <img
+            alt=""
+            src="arrow-up-right-from-square-solid.svg"
+            style="width: 10%; height: 10%; margin: 0px 50px;"
+          />
+        </a>
+      </div>
+      <h2
+        class="project-title"
+      >
+        JackedInTheBox
+      </h2>
+      <p
+        class="descriptionStack"
+      >
+        Time to take your workouts seriously! Come register and try out JackedInTheBox, to get exercise motion GIPHY, and calculate your BMI with your Age, Height, and Weight!
+      </p>
+      <p
+        class="descriptionStack"
+      >
+        Stack: HTML, CSS, JavaScript, Tailwind CSS, Handlebars, JQUERY, NODE,EXPRESS, BOOSTRAP, Sequelize, MYSQL
+      </p>
+    </article>
+    <article
+      class="card"
+      style="margin: 150px 0px;"
+    >
+      <a
+        href="https://gsaaad.github.io/WeatherApp/"
+      >
+        <img
+          alt=""
+          src="weather-App.png"
+          style="width: 100%; border-radius: 5px; padding-top: 30px;"
+        />
+      </a>
+      <div
+        class="Repo-Deploy"
+      >
+        <a
+          href="https://gsaaad.github.io/WeatherApp/"
+        />
+        <a
+          href="https://github.com/gsaaad/WeatherApp"
+        >
+          <img
+            alt=""
+            src="github-brands.svg"
+            style="width: 10%; height: 10%; margin: 0px 50px;"
+          />
+        </a>
+        <a
+          href="https://gsaaad.github.io/WeatherApp/"
+        >
+          <img
+            alt=""
+            src="arrow-up-right-from-square-solid.svg"
+            style="width: 10%; height: 10%; margin: 0px 50px;"
+          />
+        </a>
+      </div>
+      <h2
+        class="project-title"
+      >
+        Weather App
+      </h2>
+      <p
+        class="descriptionStack"
+      >
+        Check the Weather! Come find out what the weather's like in any majorcity in the world. You will recieve information on the Temperature, Windspeed, UV INDEX and humidity.
+      </p>
+      <p
+        class="descriptionStack"
+      >
+        Stack: HTML, CSS, JavaScript, Bootstrap, JQuery, Moment.js
+      </p>
+    </article>
+    <article
+      class="card"
+      style="margin: 150px 0px;"
+    >
+      <a
+        href="https://gsaaad.github.io/Coding-Dojo-JS/"
+      >
+        <img
+          alt=""
+          src="CodingQuiz.png"
+          style="width: 100%; border-radius: 5px; padding-top: 30px;"
+        />
+      </a>
+      <div
+        class="Repo-Deploy"
+      >
+        <a
+          href="https://gsaaad.github.io/Coding-Dojo-JS/"
+        />
+        <a
+          href="https://github.com/gsaaad/Coding-Dojo-JS"
+        >
+          <img
+            alt=""
+            src="github-brands.svg"
+            style="width: 10%; height: 10%; margin: 0px 50px;"
+          />
+        </a>
+        <a
+          href="https://gsaaad.github.io/Coding-Dojo-JS/"
+        >
+          <img
+            alt=""
+            src="arrow-up-right-from-square-solid.svg"
+            style="width: 10%; height: 10%; margin: 0px 50px;"
+          />
+        </a>
+      </div>
+      <h2
+        class="project-title"
+      >
+        Coding Dojo
+      </h2>
+      <p
+        class="descriptionStack"
+      >
+        Are you smarter than a ..... Coding Dojo?! Test your Javascript knowledge with these challenging questions. If you think you can make it. Top 5... you'll hold a special position in the High Roller Club
+      </p>
+      <p
+        class="descriptionStack"
+      >
+        Stack: HTML, CSS, JavaScript
+      </p>
+    </article>
+    <article
+      class="card"
+      style="margin: 150px 0px;"
+    >
+      <a
+        href="https://gsaaad.github.io/DayScheduler/"
+      >
+        <img
+          alt=""
+          src="daySchedular.png"
+          style="width: 100%; border-radius: 5px; padding-top: 30px;"
+        />
+      </a>
+      <div
+        class="Repo-Deploy"
+      >
+        <a
+          href="https://gsaaad.github.io/DayScheduler/"
+        />
+        <a
+          href="https://github.com/gsaaad/DayScheduler"
+        >
+          <img
+            alt=""
+            src="github-brands.svg"
+            style="width: 10%; height: 10%; margin: 0px 50px;"
+          />
+        </a>
+        <a
+          href="https://gsaaad.github.io/DayScheduler/"
+        >
+          <img
+            alt=""
+            src="arrow-up-right-from-square-solid.svg"
+            style="width: 10%; height: 10%; margin: 0px 50px;"
+          />
+        </a>
+      </div>
+      <h2
+        class="project-title"
+      >
+        Work Day Scheduler
+      </h2>
+      <p
+        class="descriptionStack"
+      >
+        Increase your productivity using this application! You can add events throughout your day. Intuitivly tell the time and what events/tasks you should prioritize.
+      </p>
+      <p
+        class="descriptionStack"
+      >
+        Stack: HTML, CSS, Javascript, Bootstrap, JQUERY
+      </p>
+    </article>
+  </div>
+</DocumentFragment>
+`;
