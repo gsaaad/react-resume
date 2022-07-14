@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.css";
-function Header() {
+function Header(props) {
+  const { category = [], currentCategory, setCurrentCategory } = props;
+
+  useEffect(() => {
+    document.title = currentCategory.name;
+  }, [currentCategory]);
   return (
     <div>
       <header>
         <nav className="Navbar">
           <h1>GS</h1>
           <ul>
-            <li>
-              <a href="https://www.google.com/">About</a>
+            {category.map((eachCategory) => (
+              <li
+                onClick={() => {
+                  setCurrentCategory(eachCategory);
+                }}
+              >
+                {eachCategory.name}
+              </li>
+            ))}
+
+            {/* <li>
+              <a href="/">About</a>
             </li>
             <li>
               <a href="https://www.google.com/">Portfolio</a>
@@ -18,7 +33,7 @@ function Header() {
             </li>
             <li>
               <a href="https://www.google.com/">Resume</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>

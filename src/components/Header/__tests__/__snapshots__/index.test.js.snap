@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<DocumentFragment>
+  <div>
+    <header>
+      <nav
+        class="Navbar"
+      >
+        <h1>
+          GS
+        </h1>
+        <ul>
+          <li>
+            <a
+              href="https://www.google.com/"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/"
+            >
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/"
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/"
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+</DocumentFragment>
+`;
