@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./index.css";
+import GS from "../../assets/img/GS.png";
 function Header(props) {
   const { category = [], currentCategory, setCurrentCategory } = props;
 
