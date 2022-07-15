@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   background-image: linear-gradient(#04215b, black);
+  color: white;
+}
+.lime-bottom {
+  border-bottom: 3px solid lime;
 }
 
 .section {
@@ -10,6 +14,22 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+}
+.f-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrap-me {
+  flex-wrap: wrap;
+}
+.Intro-text {
+  padding: 20px;
+}
+.portfolioPhoto {
+  width: 35%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 25px lime;
 }
 .Projects {
   font-size: 30px;

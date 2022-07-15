@@ -17,6 +17,10 @@ nav > h1 {
   text-shadow: 5px 5px 5px black;
 }
 
+.navActive {
+  border-bottom: 5px solid lime;
+}
+
 ul {
   display: flex;
   flex-direction: row;

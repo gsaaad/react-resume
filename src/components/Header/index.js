@@ -14,11 +14,14 @@ function Header(props) {
           <ul>
             {category.map((eachCategory) => (
               <li
+                className={`${
+                  currentCategory.name === category.name && "navActive"
+                }`}
                 onClick={() => {
                   setCurrentCategory(eachCategory);
                 }}
               >
-                {eachCategory.name}
+                <span>{eachCategory.name}</span>
               </li>
             ))}
 
