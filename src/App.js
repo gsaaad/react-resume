@@ -1,21 +1,24 @@
 import "./App.css";
 import Header from "./components/Header";
+import About from "./components/About";
+import Project from "./components/Project";
 import Footer from "./components/Footer";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import portfolioPhoto from "./assets/img/Portfolio_Pic.jpg";
 function App() {
   const [category] = useState([
     { name: "About" },
     { name: "Portfolio" },
-    { name: "Contact" },
     { name: "Resume" },
+    { name: "Contact" },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState([category[0]]);
-  document.title = "George Saad Portfolio";
-
+  useEffect(() => {
+    document.title = "George Saad Portfolio";
+  });
   return (
     <div className="App">
       <Header
