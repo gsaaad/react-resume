@@ -6,15 +6,16 @@ import Project from "./components/Project";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Intro from "./components/Intro";
+import Resume from "./components/Resume";
 
 import { useState } from "react";
 
 function App() {
   const [category] = useState([
     { name: "About", component: <About></About> },
-    { name: "Resume", component: "Hello Resume" },
+    { name: "Resume", component: <Resume></Resume> },
     { name: "Project", component: <Project></Project> },
-    { name: "Contact", component: "Hello CONTACT" },
+    { name: "Contact", component: <Contact></Contact> },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState([category[0]]);
@@ -23,7 +24,7 @@ function App() {
   console.log(category[0], "category 0");
 
   return (
-    <div className="App">
+    <div className="App ">
       <Header
         category={category}
         currentCategory={currentCategory}

@@ -1,0 +1,91 @@
+.ExpPanel {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 30px;
+  color: black;
+}
+.CareerProfile {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.careerstatement {
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: 50px;
+  text-align: center;
+  padding: 10px;
+}
+.ExperienceTitle {
+  font-size: 40px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.Experience {
+  margin-left: 50px;
+  text-align: center;
+}
+.Work {
+  border: 2px groove greenyellow;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.jtitle {
+  font-size: 40px;
+  color: black;
+  border-top: 0.3ex groove #222;
+  border-bottom: 0.3ex groove #222;
+  position: relative;
+  margin: 50px;
+}
+.workplace {
+  font-size: 35px;
+  float: left;
+  margin-left: 50px;
+  border-top: 0.25ex groove black;
+  border-bottom: 0.25ex groove black;
+}
+.date {
+  font-size: 30px;
+  float: right;
+  margin-right: 50px;
+  border-bottom: 0.25ex groove black;
+  border-top: 0.25ex groove black;
+}
+.descp {
+  margin: 120px;
+  font-size: 30px;
+  display: flex;
+}
+
+.School {
+  border: 2px groove purple;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-size: 40px;
+  margin-right: 50px;
+}
+.Degree {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.Minor {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+.job-descp {
+  margin-top: 50px;
+}

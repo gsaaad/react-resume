@@ -60,38 +60,44 @@ function Project() {
   return (
     <section>
       <h1 className="Projects">Projects</h1>
-      {projects.map(({ Name, Description, Stack, Repo, AppLink, image }) => (
-        <article className="card" style={{ margin: "150px 0px" }}>
-          <a href={AppLink}>
-            <img
-              src={image}
-              alt=""
-              style={{ width: "100%", borderRadius: "5px", paddingTop: "30px" }}
-            />
-            <div className="Repo-Deploy">
-              <a href={Repo}>
-                <img
-                  src={githubLogo}
-                  alt=""
-                  className="icons"
-                  style={{ width: "10%", height: "10%", margin: "0px 50px" }}
-                />
-              </a>
-              <a href={AppLink}>
-                <img
-                  src={DeployLogo}
-                  alt=""
-                  className="icons"
-                  style={{ width: "10%", height: "10%", margin: "0px 50px" }}
-                />
-              </a>
-            </div>
-          </a>
-          <h2 className="project-title">{Name}</h2>
-          <p className="descriptionStack">{Description}</p>
-          <p className="descriptionStack">Stack: {Stack}</p>
-        </article>
-      ))}
+      <div>
+        {projects.map(({ Name, Description, Stack, Repo, AppLink, image }) => (
+          <article className="card" style={{ margin: "150px 0px" }}>
+            <a href={AppLink}>
+              <img
+                src={image}
+                alt=""
+                style={{
+                  width: "100%",
+                  borderRadius: "5px",
+                  paddingTop: "30px",
+                }}
+              />
+              <div className="Repo-Deploy">
+                <a href={Repo}>
+                  <img
+                    src={githubLogo}
+                    alt=""
+                    className="icons"
+                    style={{ width: "10%", height: "10%", margin: "0px 50px" }}
+                  />
+                </a>
+                <a href={AppLink}>
+                  <img
+                    src={DeployLogo}
+                    alt=""
+                    className="icons"
+                    style={{ width: "10%", height: "10%", margin: "0px 50px" }}
+                  />
+                </a>
+              </div>
+            </a>
+            <h2 className="project-title">{Name}</h2>
+            <p className="descriptionStack">{Description}</p>
+            <p className="descriptionStack">Stack: {Stack}</p>
+          </article>
+        ))}
+      </div>
     </section>
 
     // <article className="card">
