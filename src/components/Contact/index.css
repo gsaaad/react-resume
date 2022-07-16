@@ -25,9 +25,9 @@ input {
 .errorMessage {
   display: flex;
 }
-img {
+.icons {
   width: 60px;
-  background-color: white;
+  background-color: rgb(9, 169, 218);
   padding: 3px;
   border-radius: 10px;
   margin: 5px;

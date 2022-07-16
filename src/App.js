@@ -12,8 +12,8 @@ import { useState } from "react";
 function App() {
   const [category] = useState([
     { name: "About", component: <About></About> },
-    { name: "Project", comppnent: "hELLO PROJECTS" },
     { name: "Resume", component: "Hello Resume" },
+    { name: "Project", component: <Project></Project> },
     { name: "Contact", component: "Hello CONTACT" },
   ]);
 

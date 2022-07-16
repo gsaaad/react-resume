@@ -58,7 +58,7 @@ function Project() {
   ];
 
   return (
-    <div>
+    <section>
       <h1 className="Projects">Projects</h1>
       {projects.map(({ Name, Description, Stack, Repo, AppLink, image }) => (
         <article className="card" style={{ margin: "150px 0px" }}>
@@ -73,6 +73,7 @@ function Project() {
                 <img
                   src={githubLogo}
                   alt=""
+                  className="icons"
                   style={{ width: "10%", height: "10%", margin: "0px 50px" }}
                 />
               </a>
@@ -80,6 +81,7 @@ function Project() {
                 <img
                   src={DeployLogo}
                   alt=""
+                  className="icons"
                   style={{ width: "10%", height: "10%", margin: "0px 50px" }}
                 />
               </a>
@@ -90,7 +92,7 @@ function Project() {
           <p className="descriptionStack">Stack: {Stack}</p>
         </article>
       ))}
-    </div>
+    </section>
 
     // <article className="card">
     //   <a href="https://gsaaad.github.io/DineInside/">

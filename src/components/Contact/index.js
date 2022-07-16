@@ -81,7 +81,11 @@ function ContactMeForm() {
         </div>
         {errorMessage && (
           <div className="errorMessage">
-            <img src={errorIcon} alt="Error in form Contact" />
+            <img
+              src={errorIcon}
+              alt="Error in form Contact"
+              className="icons"
+            />
             <p>{errorMessage}</p>
           </div>
         )}
