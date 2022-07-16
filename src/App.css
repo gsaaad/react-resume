@@ -20,12 +20,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.wrap-me {
-  flex-wrap: wrap;
-}
-.Intro-text {
-  padding: 20px;
-}
+
 .portfolioPhoto {
   width: 85%;
   border-radius: 10px;

@@ -15,8 +15,8 @@ function Header(props) {
             {category.map((eachCategory) => (
               <li
                 className={`${
-                  currentCategory.name === category.name
-                } && "navActive"
+                  currentCategory.name === category.name && "navActive"
+                }
                 
                 `}
                 onClick={() => {
