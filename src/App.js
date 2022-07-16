@@ -35,17 +35,23 @@ function App() {
           {/* if not contact, show intro + skills. */}
           {!contactSelected ? (
             <>
-              <h1>George Saad</h1>
-              <h2>Full Stack Developer</h2>
-              <p className="Intro-text">
-                Curious Full Stack Developer utilizing my background knowledge
-                in Psychology and Neuroscience to build a more intuitive and
-                enhanced user experience on applications. Expanding my skills in
-                JavaScript, CSS, HTML, React, Node, and Python. A proven leader
-                and effective team player. Passionate and detail-oriented toward
-                data analysis, web development, data science, and backend
-                designs and data structures.
-              </p>
+              <div className="wrap-me">
+                <h1>George Saad</h1>
+                <h2>Full Stack Developer</h2>
+                <p className="Intro-text">
+                  Curious Full Stack Developer utilizing my background knowledge
+                  in Psychology and Neuroscience to build a more intuitive and
+                  enhanced user experience on applications. Expanding my skills
+                  in JavaScript, CSS, HTML, React, Node, and Python. A proven
+                  leader and effective team player. Passionate and
+                  detail-oriented toward data analysis, web development, data
+                  science, and backend designs and data structures.
+                </p>
+              </div>
+              <div>
+                <img src={portfolioPhoto} alt="" className="portfolioPhoto" />
+              </div>
+
               <h2>Skills:</h2>
 
               <ul className="wrap-me">
@@ -71,7 +77,6 @@ function App() {
             </>
           )}
         </main>
-        <img src={portfolioPhoto} alt="" className="portfolioPhoto" />
       </section>
       {/* <section>
           <About></About>

@@ -1,17 +1,25 @@
-.Contact-form {
-  background-color: red;
+.Contact-title {
+  font-size: 40px;
+  border-bottom: 2px solid lime;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+
+  font-size: 25px;
 }
 
 input,
 textarea {
   width: 100%;
+}
+input {
+  height: 1.75rem;
+}
+textarea {
+  height: 5rem;
 }
 ::placeholder {
   color: lightgray;

@@ -8,8 +8,8 @@ function ContactMeForm() {
     message: "",
   });
   return (
-    <section className="Contact-form">
-      <h1>Contact me</h1>
+    <section>
+      <h1 className="Contact-title">Contact me</h1>
       <form>
         <div>
           <label htmlFor="name">Name:</label>
@@ -23,7 +23,6 @@ function ContactMeForm() {
           <label htmlFor="message">Message:</label>
           <textarea
             name="message"
-            row="5"
             placeholder="Send me a message of how I can help you! Will get back to you shortly."
           ></textarea>
         </div>

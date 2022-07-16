@@ -27,9 +27,9 @@
   padding: 20px;
 }
 .portfolioPhoto {
-  width: 35%;
+  width: 85%;
   border-radius: 10px;
-  box-shadow: 10px 10px 25px lime;
+  box-shadow: 10px 10px 40px rgb(0, 201, 0);
 }
 .Projects {
   font-size: 30px;
