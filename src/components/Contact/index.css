@@ -1,0 +1,19 @@
+.Contact-form {
+  background-color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+::placeholder {
+  color: lightgray;
+  opacity: 1;
+}
