@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import "./index.css";
 function Header(props) {
-  const { category = [], currentCategory, setCurrentCategory } = props;
+  const {
+    category = [],
+    currentCategory,
+    setCurrentCategory,
+    contactSelected,
+    setContactSelected,
+  } = props;
 
   useEffect(() => {
     document.title = currentCategory.name;
@@ -15,8 +21,9 @@ function Header(props) {
             {category.map((eachCategory) => (
               <li
                 className={`${
-                  currentCategory.name === category.name && "navActive"
-                }`}
+                  currentCategory.name === category.name
+                } && "navActive"
+                `}
                 onClick={() => {
                   setCurrentCategory(eachCategory);
                 }}
