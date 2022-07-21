@@ -7,20 +7,6 @@
   border-bottom: 3px solid lime;
 }
 
-.section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-.f-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .portfolioPhoto {
   width: 85%;
   border-radius: 10px;

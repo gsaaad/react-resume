@@ -1,7 +1,7 @@
 .ExpPanel {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: rgb(185, 213, 255);
   margin: 30px;
   color: black;
 }
@@ -87,5 +87,5 @@ ul {
   list-style-type: none;
 }
 .job-descp {
-  margin-top: 50px;
+  margin: 150px 5px;
 }

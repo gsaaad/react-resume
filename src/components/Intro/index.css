@@ -1,5 +1,9 @@
 .Intro-text {
-  padding: 20px;
+  padding: 10px;
+}
+.name {
+  font-size: 4rem;
+  margin-top: 2rem;
 }
 
 .section {

@@ -30,12 +30,12 @@ function App() {
         currentCategory={currentCategory}
         setCurrentCategory={setCurrentCategory}
       ></Header>
-      <section className="section f-row">
+      <section>
         <main>
           {currentCategory[0] === category[0] ? (
             <div>
-              <Intro></Intro>
-              <Skill></Skill>
+              {/* <Intro></Intro> */}
+              {/* <Skill></Skill> */}
             </div>
           ) : (
             <div>{currentCategory.component}</div>

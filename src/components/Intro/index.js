@@ -5,8 +5,8 @@ function Intro() {
   return (
     <section>
       <div className="wrap-me">
-        <h1>George Saad</h1>
-        <h2>Full Stack Developer</h2>
+        <h1 className="name">George Saad</h1>
+        <h2 className="title">Full Stack Developer</h2>
         <p className="Intro-text">
           Curious Full Stack Developer utilizing my background knowledge in
           Psychology and Neuroscience to build a more intuitive and enhanced

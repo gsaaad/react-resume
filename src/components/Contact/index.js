@@ -89,7 +89,7 @@ function ContactMeForm() {
             <p>{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">
+        <button data-testid="button" type="submit" className="submit-btn">
           Submit
         </button>
       </form>

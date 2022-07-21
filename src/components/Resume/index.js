@@ -5,14 +5,13 @@ function Resume() {
     <div className="ExpPanel">
       <div className="CareerProfile">Career Profile</div>
       <div className="careerstatement">
-        George Saad is a high performance individual.
+        George Saad is a Full Stack Developer with a background in Psychology
+        And Neuroscience
         <br />
         He indulges in learning complex systems and is detail oritented. Always
         looking for new challenges and growth oppertunities.
         <br />
-        <strong>
-          Being a Full Stack Developer and building Applications is his passion!
-        </strong>
+        <strong>Full Stack Developer with Python Skills!</strong>
       </div>
       <div className="ExperienceTitle">Experiences</div>
       <div className="Experience">
@@ -22,21 +21,21 @@ function Resume() {
           <div className="date">2020-Present</div>
           <div className="descp">
             <ul>
-              <li className="job-descp">
+              <p className="job-descp">
                 Provided individualized planning, promoting personal choices,
                 opportunities and responsibilities for the clients
-              </li>
-              <li className="job-descp">
+              </p>
+              <p className="job-descp">
                 Promoted and supported meaningful relationships and provided
                 safe, supportive, care and services
-              </li>
-              <li className="job-descp">
+              </p>
+              <p className="job-descp">
                 Implementing the unique Behaviour Support Plans for each client
                 to ensure an increased quality of life
-              </li>
-              <li className="job-descp">
+              </p>
+              <p className="job-descp">
                 Administering medication for each client on time
-              </li>
+              </p>
             </ul>
           </div>
           <br />
@@ -45,20 +44,17 @@ function Resume() {
           <div className="date">2019-2020</div>
           <div className="descp">
             <ul>
-              <li className="job-descp">
+              <p className="job-descp">
                 Using ImageJ to quantify dendrites through sholl analysis and
                 branching order
-              </li>
-              <li className="job-descp">
+              </p>
+              <p className="job-descp">
                 Organized files and maintained database
-              </li>
-              <li className="job-descp">
+              </p>
+              <p className="job-descp">
                 "SPATIAL MEMORY AND EXECUTIVE FUNCTIONING IN THE GOTO-KAKIZAKI
-                RAT MODEL OF DIABETES"{" "}
-              </li>
-              <li className="job-descp">
-                Published in November 2020, Endorsement is at the end.
-              </li>
+                RAT MODEL OF DIABETES" - Published in November 2020.
+              </p>
             </ul>
           </div>
           <br />
@@ -67,38 +63,37 @@ function Resume() {
           <div className="date">2017-2020</div>
           <div className="descp">
             <ul>
-              <li className="job-descp">
+              <p className="job-descp">
                 Assisted in fully running the research experiment from start to
-                end with novel participants and for the Psycholinguistics EEG
-                lab
-              </li>
-              <li className="job-descp">
+                end with novel participants and for the Psychopnguistics EEG lab
+              </p>
+              <p className="job-descp">
                 Manage, review and maintain the study file(s)
-              </li>
-              <li className="job-descp">
+              </p>
+              <p className="job-descp">
                 Proven verbal, written, and presentation skills to communicate
                 at all levels of knowledge
-              </li>
-              <li className="job-descp">
+              </p>
+              <p className="job-descp">
                 Ability to problem-solve, analyze data, report on success, as
                 well as identify risks
-              </li>
+              </p>
             </ul>
           </div>
         </div>
-        {/* <div className="School">
-        <h2 className="date"> 2022 - 2022</h2>
-        <img
-          src="https://seekvectorlogo.com/wp-content/uploads/2018/02/university-of-toronto-vector-logo.png"
-          alt=""
-          height={500}
-          width={700}
-        />
+        <div className="School">
+          <h2 className="date"> 2022 - 2022</h2>
+          <img
+            src="https://seekvectorlogo.com/wp-content/uploads/2018/02/university-of-toronto-vector-logo.png"
+            alt=""
+            height={500}
+            width={700}
+          />
 
-        <h1 className="Degree">Full Stack Developer Coding Bootcamp</h1>
+          <h1 className="Degree">Full Stack Developer Coding Bootcamp</h1>
 
-        <h2 className="School">University of Toronto</h2>
-      </div> */}
+          <h2 className="School">University of Toronto</h2>
+        </div>
         <div className="School">
           <h2 className="date"> 2015 - 2020</h2>
           <img
