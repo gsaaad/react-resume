@@ -16,6 +16,9 @@ Welcome to George Saad's React Portfolio, showing his skillset in React, CSS, Ja
 ## Usage
 
 React Portfolio
+https://gsaaad.github.io/react-resume/
+
+- ![Screenshot](./src/assets/img/Portfolio_Preview.png)
 
 ## Installation
 
