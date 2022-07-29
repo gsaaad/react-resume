@@ -7,6 +7,7 @@ import JackedInTheBoxImage from "../../assets/img/JackedInTheBoxPreview.png";
 import WeatherAppImage from "../../assets/img/weather-App.png";
 import CodingQuizImage from "../../assets/img/CodingQuiz.png";
 import daySchedularImage from "../../assets/img/daySchedular.png";
+import MOSTCOAST from "../../assets/img/MOST_COAST.png";
 function Project() {
   const projects = [
     {
@@ -54,6 +55,16 @@ function Project() {
       Repo: "https://github.com/gsaaad/DayScheduler",
       AppLink: "https://gsaaad.github.io/DayScheduler/",
       image: daySchedularImage,
+    },
+    {
+      Name: "Most To Coast",
+      Description:
+        "This app will reduce travel planning time. Creating a time schedule for the trip would be a little troublesome to some people and sometimes have no clue where one should go and how they should plan. This app will be the solution to those problems.",
+      Stack:
+        "HTML,CSS, JavaScript, Node.js, Express.js, NPM, Path, React & React Router, MongoDB, Apollo Server, GQL, Apollo Client, JSON Web Token(JWT)",
+      Repo: "https://github.com/gsaaad/Most_to_Coast",
+      AppLink: "https://peaceful-journey-57215.herokuapp.com/main",
+      image: MOSTCOAST,
     },
   ];
 
