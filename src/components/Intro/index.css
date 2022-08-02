@@ -1,18 +1,10 @@
-.Intro-text {
-  padding: 20px;
-}
-
-.section {
-  min-height: 100vh;
+.Intro-Self {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  margin: 2rem 5rem;
 }
 
-.f-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.Intro-text {
+  padding: 20px;
 }

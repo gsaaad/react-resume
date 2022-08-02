@@ -4,8 +4,13 @@ import "./index.css";
 function Intro() {
   return (
     <section>
+<<<<<<< Updated upstream
       <div className="wrap-me">
         <h1>George Saad</h1>
+=======
+      <div className="Intro-Self">
+        <h1 className="name">George Saad</h1>
+>>>>>>> Stashed changes
         <h2>Full Stack Developer</h2>
         <p className="Intro-text">
           Curious Full Stack Developer utilizing my background knowledge in

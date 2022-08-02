@@ -1,11 +1,12 @@
 .Navbar {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-around;
-  /* font-size: 18px; */
+
   color: white;
+  text-align: center;
+  background-image: linear-gradient(#04215b, black);
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -21,15 +22,12 @@ nav > h1 {
   border-bottom: 5px solid lime;
 }
 
-ul {
+.Navbar-list {
   display: flex;
-  flex-direction: row;
-  margin: 10px 5px;
   list-style: none;
-  font-size: 20px;
 }
-ul > li {
-  margin: 5px 10px;
-  font-size: 20px;
+.Navbar-list > li {
+  font-size: 1.7rem;
+  margin-left: 1.1em;
   text-shadow: 3px 3px 3px black;
 }

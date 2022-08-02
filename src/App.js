@@ -34,15 +34,15 @@ function App() {
         <main>
           {currentCategory[0] === category[0] ? (
             <div>
-              <Intro></Intro>
-              <Skill></Skill>
+              {/* <Intro></Intro> */}
+              {/* <Skill></Skill> */}
             </div>
           ) : (
             <div>{currentCategory.component}</div>
           )}
         </main>
       </section>
-      <Contact></Contact>
+      {/* <Contact></Contact> */}
       <Footer></Footer>
       <script src="https://cdn.tailwindcss.com"></script>
     </div>
