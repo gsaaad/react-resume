@@ -3,16 +3,11 @@ import portfolioPhoto from "../../assets/img/Portfolio_Pic.jpg";
 import "./index.css";
 function Intro() {
   return (
-    <section>
-<<<<<<< Updated upstream
-      <div className="wrap-me">
-        <h1>George Saad</h1>
-=======
-      <div className="Intro-Self">
-        <h1 className="name">George Saad</h1>
->>>>>>> Stashed changes
+    <section className="Intro-container">
+      <div className="Intro-Self grid grid-cols-12">
+        <h1 className="Name">George Saad</h1>
         <h2>Full Stack Developer</h2>
-        <p className="Intro-text">
+        <p className="Intro-text ">
           Curious Full Stack Developer utilizing my background knowledge in
           Psychology and Neuroscience to build a more intuitive and enhanced
           user experience on applications. Expanding my skills in JavaScript,

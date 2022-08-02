@@ -1,10 +1,25 @@
+.Intro-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
 .Intro-Self {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 2rem 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Name {
+  font-size: 3.2rem;
+  border-bottom: 4px solid lime;
 }
 
 .Intro-text {
-  padding: 20px;
+  padding: 0.2rem;
 }
