@@ -49,11 +49,17 @@ function ContactMeForm() {
     }
   }
   return (
-    <section>
-      <h1 className="Contact-title">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmitForm}>
+    <section className="contact-container">
+      <h1 className="contact-title">Contact me</h1>
+      <form
+        id="contact-form"
+        onSubmit={handleSubmitForm}
+        className="contact-form"
+      >
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name" className="contact-labels">
+            Name:
+          </label>
           <input
             name="name"
             type="text"
@@ -62,7 +68,9 @@ function ContactMeForm() {
           ></input>
         </div>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email" className="contact-labels">
+            Email:
+          </label>
           <input
             name="email"
             type="email"
@@ -71,10 +79,12 @@ function ContactMeForm() {
           ></input>
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message" className="contact-labels">
+            Message:
+          </label>
           <textarea
             name="message"
-            placeholder="Send me a message of how I can help you! Will get back to you shortly."
+            placeholder="Send me a message, will get back to you shortly."
             defaultValue={message}
             onBlur={handleChangeInForm}
           ></textarea>
@@ -89,7 +99,7 @@ function ContactMeForm() {
             <p>{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">
+        <button data-testid="button" type="submit" className="contact-button">
           Submit
         </button>
       </form>

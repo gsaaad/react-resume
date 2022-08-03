@@ -1,7 +1,6 @@
 .intro-container {
   display: flex;
   flex-direction: column;
-  margin-right: 7rem;
 }
 .intro-name {
   font-size: 3.4rem;
@@ -15,18 +14,17 @@
 }
 .intro-descp {
   font-size: 1.87rem;
-  opacity: 1;
+  animation: fadeIn1 ease 4s;
 }
 .intro-descp2 {
   font-size: 1.87rem;
-  opacity: 1;
   margin: 1.3rem;
+  animation: fadeIn2 ease-in-out 6s;
 }
 .intro-descp3 {
   font-size: 1.87rem;
-  opacity: 1;
+  animation: fadeIn3 ease-in-out 6s;
 }
-
 .intro-self {
   display: flex;
   flex-direction: column;
@@ -35,5 +33,57 @@
   align-items: center;
 }
 .portfolioPhoto {
-  width: 100%;
+  width: max-content;
+}
+
+@keyframes fadeIn1 {
+  /* 0% {
+  
+  }
+  100% {
+   
+  } */
+
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn2 {
+  /* 0% {
+  
+  }
+  100% {
+   
+  } */
+
+  from {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn3 {
+  /* 0% {
+  
+  }
+  100% {
+   
+  } */
+
+  from {
+    transform: translateY(400%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
