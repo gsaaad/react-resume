@@ -4,7 +4,7 @@
 }
 .contact-title {
   font-size: 40px;
-  border-bottom: 2px solid lime;
+  border-bottom: 4px solid lime;
 }
 .contact-labels {
   font-size: 1.9rem;
@@ -12,7 +12,8 @@
 input,
 textarea {
   width: 100%;
-
+  color: black;
+  padding: 15px;
   border-radius: 20px;
 }
 input {
@@ -20,11 +21,16 @@ input {
 }
 .errorMessage {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icons {
   width: 60px;
-  background-color: rgb(9, 169, 218);
+  background-color: rgb(218, 33, 9);
   padding: 3px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
   border-radius: 10px;
   margin: 5px;
 }
@@ -34,6 +40,7 @@ textarea {
 }
 ::placeholder {
   font-size: 1.4rem;
+  color: black;
 }
 .contact-button {
   min-height: 65px;
@@ -41,7 +48,9 @@ textarea {
   color: black;
   font-size: 2rem;
   font-weight: 700;
-  margin: 10px 5px;
+  margin: 20px 5px;
   width: 50%;
   background-color: lime;
+  border-top: 2px solid white;
+  border-bottom: 8px solid rgb(0, 12, 0);
 }

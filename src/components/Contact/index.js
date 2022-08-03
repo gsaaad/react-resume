@@ -43,9 +43,17 @@ function ContactMeForm() {
   }
   function handleSubmitForm(e) {
     e.preventDefault();
-    // if there's no errors, send form
-    if (!errorMessage) {
+    // if there's no errors and there's input of something, send form
+    var userName = e.target[0].value;
+    var userEmail = e.target[1].value;
+    var userMessage = e.target[2].value;
+
+    if (!errorMessage && userName && userEmail && userMessage) {
       console.log("Submit Form", formState);
+    } else {
+      setErrorMessage(
+        "Invalid Name, Email or Message.. Please check again before you re-submit"
+      );
     }
   }
   return (

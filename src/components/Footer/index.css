@@ -1,5 +1,10 @@
 footer {
   font-size: 30px;
   height: 50px;
-  background-image: linear-gradient(rgb(1, 94, 100), #007db8);
+  background-image: linear-gradient(
+    rgb(1, 77, 1),
+    rgb(2, 129, 2),
+    rgb(2, 160, 2),
+    lime
+  );
 }
