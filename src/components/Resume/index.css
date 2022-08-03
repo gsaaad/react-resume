@@ -101,6 +101,7 @@ ul {
 .career-statement {
   font-size: 1.75rem;
   margin: 15px 5px;
+  text-shadow: 6px 6px 4px black;
 }
 .exp-panel {
   display: flex;
@@ -111,20 +112,26 @@ ul {
 
 .job-title {
   font-size: 2.5rem;
+  text-shadow: 5px 5px 5px black;
 }
 .job-workplace {
   font-size: 1.9rem;
   border: 1.2px solid lime;
   border-radius: 20px;
+  text-shadow: 5px 5px 5px black;
 }
 .job-date {
   font-size: 1.7rem;
   border-bottom: 3px solid lime;
+  width: 25%;
+  margin: auto;
+  text-shadow: 5px 5px 5px black;
 }
 .job-descp {
   font-size: 1.65rem;
   list-style: disc;
   margin-top: 10px;
+  text-shadow: 6px 6px 4px black;
 }
 
 .section-title {
@@ -136,11 +143,13 @@ ul {
 }
 .degree {
   font-size: 2.5rem;
+  text-shadow: 6px 6px 4px black;
 }
 .school {
   font-size: 2.3rem;
   border: 2px solid lime;
   border-radius: 20px;
+  text-shadow: 6px 6px 4px black;
 }
 .school-img {
   border-radius: 20px;
@@ -151,4 +160,5 @@ ul {
 }
 .minor {
   font-size: 1.85rem;
+  text-shadow: 6px 6px 4px black;
 }
