@@ -2,27 +2,31 @@ import React from "react";
 import "./index.css";
 function Resume() {
   return (
-    <div className="ExpPanel">
-      <div className="CareerProfile">Career Profile</div>
-      <div className="careerstatement">
-        George Saad is a high performance individual
-        <br />
-        He indulges in learning complex scalable systems, and bringing novel
-        ideas to the way we do things.
-        <br />
-        <strong>
-          Creating interactive, functional and meaningful applications and
-          websites that help make people's lives better.
-        </strong>
+    <div className="grid grid-cols-1 gap-8 ">
+      <div className="section-title">Career Profile</div>
+      <div className="desc">
+        <p className="career-statement">
+          George Saad is a high performance individual.
+        </p>
+        <p className="career-statement">
+          He indulges in learning complex scalable systems, and bringing novel
+          ideas to the way we do things.
+        </p>
+        <p className="career-statement">
+          <strong>
+            Creating interactive, functional and meaningful applications and
+            websites that help make people's lives better.
+          </strong>
+        </p>
       </div>
+      <div className="section-title">Experiences</div>
       <div>
-        <div className="ExperienceTitle">Experiences</div>
-        <div className="Experience">
-          <div className="Work">
-            <div className="jtitle">Behavior Support Specialist</div>
-            <div className="workplace">Safe Management Group</div>
-            <div className="date">2020-Present</div>
-            <div className="descp">
+        <div className="experiences">
+          <div className="desc">
+            <div className="job-title">Behavior Support Specialist</div>
+            <div className="job-workplace">Safe Management Group</div>
+            <div className="job-date">2020-Present</div>
+            <div>
               <ul>
                 <li className="job-descp">
                   Provided individualized planning, promoting personal choices,
@@ -43,10 +47,10 @@ function Resume() {
             </div>
           </div>
           <br />
-          <div>
-            <div className="jtitle">Research Assisstant</div>
-            <div className="workplace">Mallet Lab</div>
-            <div className="date">2019-2020</div>
+          <div className="desc">
+            <div className="job-title">Research Assisstant</div>
+            <div className="job-workplace">Mallet Lab</div>
+            <div className="job-date">2019-2020</div>
             <div className="descp">
               <ul>
                 <li className="job-descp">
@@ -61,16 +65,17 @@ function Resume() {
                   RAT MODEL OF DIABETES"{" "}
                 </li>
                 <li className="job-descp">
-                  Published in November 2020, Endorsement is at the end.
+                  Published in November 2020, Endorsement on Acknowledgement
+                  page, on page 7
                 </li>
               </ul>
             </div>
           </div>
           <br />
-          <div>
-            <div className="jtitle">Research Assistant</div>
-            <div className="workplace">Jones Lab</div>
-            <div className="date">2017-2020</div>
+          <div className="desc">
+            <div className="job-title">Research Assistant</div>
+            <div className="job-workplace">Jones Lab</div>
+            <div className="job-date">2017-2020</div>
             <div className="descp">
               <ul>
                 <li className="job-descp">
@@ -93,32 +98,38 @@ function Resume() {
             </div>
           </div>
         </div>
-        <div className="School">
+      </div>
+      <div className="section-title">Schools</div>
+
+      <div className="schools">
+        <div className="school-option">
           <h2 className="date"> 2022 - 2022</h2>
           <img
             src="https://seekvectorlogo.com/wp-content/uploads/2018/02/university-of-toronto-vector-logo.png"
             alt=""
             height={500}
             width={700}
+            className="school-img"
           />
 
-          <h1 className="Degree">Full Stack Developer Coding Bootcamp</h1>
+          <h1 className="degree">Full Stack Developer Coding Bootcamp</h1>
 
-          <h2 className="School">University of Toronto</h2>
+          <h2 className="school">University of Toronto</h2>
         </div>
-        <div className="School">
+        <div className="school-option">
           <h2 className="date"> 2015 - 2020</h2>
           <img
             src="https://thecord.ca/wp-content/uploads/2013/01/Laurier-Refined-Seal-e1357722647279.jpg"
             alt=""
             height={500}
             width={500}
+            className="school-img"
           />
           <div className="laurier">
-            <h1 className="Degree">Bsc. Psychology and Neuroscience</h1>
-            <h3 className="Minor">[Minor in Biology]</h3>
-            <h3 className="Minor">[Honours Thesis Project]</h3>
-            <h2 className="School">Wilfrid Laurier University</h2>
+            <h1 className="degree">Bsc. Psychology and Neuroscience</h1>
+            <h3 className="minor">[Minor in Biology]</h3>
+            <h3 className="minor">[Honours Thesis Project]</h3>
+            <h2 className="school">Wilfrid Laurier University</h2>
           </div>
         </div>
       </div>

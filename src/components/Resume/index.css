@@ -92,3 +92,48 @@ ul {
 } */
 
 /* !this is the old CSS */
+
+.desc {
+  border: 1.75px solid lime;
+  border-radius: 20px;
+  padding: 3rem;
+}
+.career-statement {
+  font-size: 1.75rem;
+  margin: 15px 5px;
+}
+.exp-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-title {
+  font-size: 2.5rem;
+}
+.job-workplace {
+  font-size: 1.9rem;
+  border: 1.2px solid lime;
+  border-radius: 20px;
+}
+.job-date {
+  font-size: 1.7rem;
+  border-bottom: 3px solid lime;
+}
+.job-descp {
+  font-size: 1.65rem;
+  list-style: disc;
+  margin-top: 10px;
+}
+
+.section-title {
+  border-bottom: 4px solid lime;
+  font-size: 3.5rem;
+  text-shadow: 5px 5px 5px black;
+}
+.school-img {
+  border-radius: 20px;
+  margin: auto;
+  width: 85%;
+}
