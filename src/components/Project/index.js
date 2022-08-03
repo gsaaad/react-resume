@@ -58,9 +58,9 @@ function Project() {
   ];
 
   return (
-    <section>
+    <section className="project-container">
       <h1 className="Projects">Projects</h1>
-      <div>
+      <div className="project-holder">
         {projects.map(({ Name, Description, Stack, Repo, AppLink, image }) => (
           <article className="card" style={{ margin: "150px 0px" }}>
             <a href={AppLink}>
