@@ -1,25 +1,39 @@
-.Intro-container {
+.intro-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-right: 40px;
+  margin-right: 7rem;
 }
-
-.Intro-Self {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.Name {
-  font-size: 3.2rem;
+.intro-name {
+  font-size: 3.4rem;
+  text-shadow: 5px 5px 5px black;
   border-bottom: 4px solid lime;
 }
+.intro-title {
+  font-size: 2.2rem;
+  color: lime;
+  text-shadow: 4px 4px 4px rgb(54, 156, 54);
+}
+.intro-descp {
+  font-size: 1.87rem;
+  opacity: 1;
+}
+.intro-descp2 {
+  font-size: 1.87rem;
+  opacity: 1;
+  margin: 1.3rem;
+}
+.intro-descp3 {
+  font-size: 1.87rem;
+  opacity: 1;
+}
 
-.Intro-text {
-  padding: 0.2rem;
+.intro-self {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.portfolioPhoto {
+  width: 100%;
 }
