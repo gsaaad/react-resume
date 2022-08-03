@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 function Resume() {
   return (
-    <div className="grid grid-cols-1 gap-8 ">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-12">
       <div className="section-title">Career Profile</div>
       <div className="desc">
         <p className="career-statement">
@@ -103,7 +103,6 @@ function Resume() {
 
       <div className="schools">
         <div className="school-option">
-          <h2 className="date"> 2022 - 2022</h2>
           <img
             src="https://seekvectorlogo.com/wp-content/uploads/2018/02/university-of-toronto-vector-logo.png"
             alt=""
@@ -117,7 +116,6 @@ function Resume() {
           <h2 className="school">University of Toronto</h2>
         </div>
         <div className="school-option">
-          <h2 className="date"> 2015 - 2020</h2>
           <img
             src="https://thecord.ca/wp-content/uploads/2013/01/Laurier-Refined-Seal-e1357722647279.jpg"
             alt=""
@@ -126,7 +124,7 @@ function Resume() {
             className="school-img"
           />
           <div className="laurier">
-            <h1 className="degree">Bsc. Psychology and Neuroscience</h1>
+            <h1 className="degree">BSc. Psychology & Neuroscience</h1>
             <h3 className="minor">[Minor in Biology]</h3>
             <h3 className="minor">[Honours Thesis Project]</h3>
             <h2 className="school">Wilfrid Laurier University</h2>
