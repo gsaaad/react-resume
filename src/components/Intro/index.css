@@ -1,7 +1,3 @@
-.intro-container {
-  display: flex;
-  flex-direction: column;
-}
 .intro-name {
   font-size: 3.4rem;
   text-shadow: 5px 5px 5px black;
@@ -15,16 +11,12 @@
   margin: 5px 20px;
 }
 .intro-descp {
-  font-size: 1.87rem;
   animation: fadeIn1 ease 4s;
 }
 .intro-descp2 {
-  font-size: 1.87rem;
-  margin: 1.3rem;
   animation: fadeIn2 ease-in-out 6s;
 }
 .intro-descp3 {
-  font-size: 1.87rem;
   animation: fadeIn3 ease-in-out 6s;
 }
 .intro-self {
@@ -35,7 +27,8 @@
   align-items: center;
 }
 .portfolioPhoto {
-  width: max-content;
+  max-width: 700px;
+  margin: 20px 5px;
 }
 
 @keyframes fadeIn1 {
