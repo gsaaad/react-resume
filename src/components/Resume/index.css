@@ -1,7 +1,8 @@
-.ExpPanel {
+/* .ExpPanel {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: lime;
+  border-radius: 20px;
   margin: 30px;
   color: black;
 }
@@ -88,4 +89,6 @@ ul {
 }
 .job-descp {
   margin-top: 50px;
-}
+} */
+
+/* !this is the old CSS */
