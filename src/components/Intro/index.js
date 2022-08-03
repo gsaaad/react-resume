@@ -3,7 +3,7 @@ import portfolioPhoto from "../../assets/img/Portfolio_Pic.jpg";
 import "./index.css";
 function Intro() {
   return (
-    <section className="grid lg:grid-cols-2">
+    <section className="grid grid-rows-1 xl:grid-cols-2">
       <div className="intro-self ">
         <h1 className="intro-name">George Saad</h1>
         <h2 className="intro-title">Full Stack Developer</h2>
