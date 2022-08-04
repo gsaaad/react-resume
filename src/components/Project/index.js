@@ -47,7 +47,7 @@ function Project() {
       image: CodingQuizImage,
     },
     {
-      Name: "Work Day Scheduler",
+      Name: "Day Scheduler",
       Description:
         "Increase your productivity using this application! You can add events throughout your day. Intuitivly tell the time and what events/tasks you should prioritize.",
       Stack: "HTML, CSS, Javascript, Bootstrap, JQUERY",
@@ -64,31 +64,13 @@ function Project() {
         {projects.map(({ Name, Description, Stack, Repo, AppLink, image }) => (
           <article className="card" style={{ margin: "150px 0px" }}>
             <a href={AppLink}>
-              <img
-                src={image}
-                alt=""
-                style={{
-                  width: "100%",
-                  borderRadius: "5px",
-                  paddingTop: "30px",
-                }}
-              />
+              <img src={image} alt="" className="project-preview" />
               <div className="Repo-Deploy">
-                <a href={Repo}>
-                  <img
-                    src={githubLogo}
-                    alt=""
-                    className="icons"
-                    style={{ width: "10%", height: "10%", margin: "0px 50px" }}
-                  />
+                <a href={Repo} className="project-links">
+                  <img src={githubLogo} alt="" className="projects-icons" />
                 </a>
-                <a href={AppLink}>
-                  <img
-                    src={DeployLogo}
-                    alt=""
-                    className="icons"
-                    style={{ width: "10%", height: "10%", margin: "0px 50px" }}
-                  />
+                <a href={AppLink} className="project-links">
+                  <img src={DeployLogo} alt="" className="projects-icons" />
                 </a>
               </div>
             </a>
