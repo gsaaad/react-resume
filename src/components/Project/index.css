@@ -86,3 +86,31 @@ p {
   transition: opacity 0.5;
   animation: spin 5s linear infinite;
 }
+
+@media only screen and (min-width: 750px) {
+  .project-container {
+    margin-left: 14rem;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .project-container {
+    margin-left: 22rem;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .project-container {
+    margin-left: 33rem;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  .project-container {
+    margin-left: 45rem;
+  }
+}
+
+@media only screen and (min-width: 2050px) {
+  .project-container {
+    margin-left: 57rem;
+  }
+}
