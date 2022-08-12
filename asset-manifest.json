@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-resume/static/css/main.38a37445.css",
-    "main.js": "/react-resume/static/js/main.416edc27.js",
+    "main.css": "/react-resume/static/css/main.c69bae4a.css",
+    "main.js": "/react-resume/static/js/main.a9014c58.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-resume/static/js/787.a2cb61a6.chunk.js",
     "static/media/DineIn.png": "/react-resume/static/media/DineIn.e203241440e7d9159959.png",
     "static/media/Portfolio_Pic.jpg": "/react-resume/static/media/Portfolio_Pic.e584c7d94d17f5be0418.jpg",
@@ -14,12 +14,12 @@
     "static/media/arrow-up-right-from-square-solid.svg": "/react-resume/static/media/arrow-up-right-from-square-solid.593fc4e665a2b5339acb9500ad5c7dea.svg",
     "index.html": "/react-resume/index.html",
     "static/media/circle-exclamation-solid.svg": "/react-resume/static/media/circle-exclamation-solid.0409905b644f012d1d74ce4121272fd3.svg",
-    "main.38a37445.css.map": "/react-resume/static/css/main.38a37445.css.map",
-    "main.416edc27.js.map": "/react-resume/static/js/main.416edc27.js.map",
+    "main.c69bae4a.css.map": "/react-resume/static/css/main.c69bae4a.css.map",
+    "main.a9014c58.js.map": "/react-resume/static/js/main.a9014c58.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-resume/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38a37445.css",
-    "static/js/main.416edc27.js"
+    "static/css/main.c69bae4a.css",
+    "static/js/main.a9014c58.js"
   ]
 }
