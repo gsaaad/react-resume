@@ -1,17 +1,10 @@
-<<<<<<< HEAD
 .about-me {
   margin: 25px;
 }
 
-.about-title {
-  font-size: 5rem;
-  margin: 25px;
-  border-bottom: 2px solid lime;
-}
-
 .about-descp {
   font-size: 2rem;
-=======
+}
 .about-title {
   font-size: 6rem;
   border-bottom: 4px solid lime;
@@ -25,5 +18,4 @@
 .about-image {
   width: 400px;
   height: 600px;
->>>>>>> develop
 }
