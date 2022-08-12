@@ -1,12 +1,31 @@
 .App {
   text-align: center;
   background-image: linear-gradient(#04215b, black);
+
   color: white;
 }
 .lime-bottom {
   border-bottom: 3px solid lime;
 }
 
+<<<<<<< HEAD
+=======
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 7rem;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.f-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+>>>>>>> develop
 .portfolioPhoto {
   width: 85%;
   border-radius: 10px;

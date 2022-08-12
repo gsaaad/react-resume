@@ -15,7 +15,6 @@ function App() {
     { name: "About", component: <About></About> },
     { name: "Resume", component: <Resume></Resume> },
     { name: "Project", component: <Project></Project> },
-    { name: "Contact", component: <Contact></Contact> },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState([category[0]]);

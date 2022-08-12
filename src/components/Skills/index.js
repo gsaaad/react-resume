@@ -1,15 +1,12 @@
 import React from "react";
 import "./index.css";
+
 function Skills() {
   return (
     <section>
-      <h2>Skills:</h2>
-
-      <ul className="wrap-me">
+      <h2 className="skills-title">Skills</h2>
+      <ul className="skills-list wrap-me">
         <li>Github</li>
-        <li>Node</li>
-        <li>Git</li>
-        <li>React</li>
         <li>Python</li>
         <li>HTML5</li>
         <li>CSS</li>

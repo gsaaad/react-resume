@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .about-me {
   margin: 25px;
 }
@@ -10,4 +11,19 @@
 
 .about-descp {
   font-size: 2rem;
+=======
+.about-title {
+  font-size: 6rem;
+  border-bottom: 4px solid lime;
+  margin: 20px 5px;
+}
+
+.about-desc {
+  font-size: 1.5rem;
+}
+
+.about-image {
+  width: 400px;
+  height: 600px;
+>>>>>>> develop
 }

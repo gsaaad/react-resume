@@ -1,7 +1,12 @@
-.ExpPanel {
+/* .ExpPanel {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   background-color: rgb(185, 213, 255);
+=======
+  background-color: lime;
+  border-radius: 20px;
+>>>>>>> develop
   margin: 30px;
   color: black;
 }
@@ -87,5 +92,81 @@ ul {
   list-style-type: none;
 }
 .job-descp {
+<<<<<<< HEAD
   margin: 150px 5px;
+=======
+  margin-top: 50px;
+} */
+
+/* !this is the old CSS */
+
+.desc {
+  border: 1.75px solid lime;
+  border-radius: 20px;
+  padding: 3rem;
+}
+.career-statement {
+  font-size: 1.75rem;
+  margin: 15px 5px;
+  text-shadow: 6px 6px 4px black;
+}
+.exp-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-title {
+  font-size: 2.5rem;
+  text-shadow: 5px 5px 5px black;
+}
+.job-workplace {
+  font-size: 1.9rem;
+  border: 1.2px solid lime;
+  border-radius: 20px;
+  text-shadow: 5px 5px 5px black;
+}
+.job-date {
+  font-size: 1.7rem;
+  border-bottom: 3px solid lime;
+  width: 25%;
+  margin: auto;
+  text-shadow: 5px 5px 5px black;
+}
+.job-descp {
+  font-size: 1.65rem;
+  list-style: disc;
+  margin-top: 10px;
+  text-shadow: 6px 6px 4px black;
+}
+
+.section-title {
+  border-right: 2px solid lime;
+  border-top: 2px solid lime;
+  border-radius: 5px;
+  font-size: 3.5rem;
+  text-shadow: 5px 5px 5px black;
+}
+.degree {
+  font-size: 2.5rem;
+  text-shadow: 6px 6px 4px black;
+}
+.school {
+  font-size: 2.3rem;
+  border: 2px solid lime;
+  border-radius: 20px;
+  text-shadow: 6px 6px 4px black;
+}
+.school-img {
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 15px;
+  width: 85%;
+  max-width: 600px;
+}
+.minor {
+  font-size: 1.85rem;
+  text-shadow: 6px 6px 4px black;
+>>>>>>> develop
 }

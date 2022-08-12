@@ -19,33 +19,32 @@
     --rotate: 360deg;
   }
 }
+.project-container {
+  margin-left: 8rem;
+}
+.Projects {
+  margin-top: 20px;
+  font-size: 4.5rem;
+  border-bottom: 4px solid lime;
+}
 
-article {
+p {
+  font-size: 18.5px;
+  font-weight: 500;
+}
+
+.card {
   display: flex;
   flex-direction: column;
   margin: auto;
   align-items: center;
   text-align: center;
   justify-content: center;
-}
-article > h2 {
-  border-bottom: 3px solid hsl(207, 100%, 56%);
-}
-p {
-  font-size: 18.5px;
-  font-weight: 500;
-}
-section {
-  margin-left: 4rem;
-}
-
-.card {
   background: #191c29;
   width: 20rem;
   height: 40rem;
   position: relative;
   border-radius: 5px;
-
   filter: drop-shadow(0 0 1.5rem hsl(207, 100%, 56%));
 }
 .card:before {
@@ -60,15 +59,29 @@ section {
     #001842
   );
   position: absolute;
-
   animation: spin 3s linear infinite;
   z-index: -2;
 }
+.card > h2 {
+  border-bottom: 3px solid hsl(207, 100%, 56%);
+}
 .project-title {
-  font-size: 30px;
+  font-size: 2.5rem;
+  margin: 10px 5px;
   color: rgb(0, 98, 218);
   text-shadow: 0.25px 0.25px 0.25px hsl(207, 100%, 56%), 3px 3px 3px #55038b;
 }
+.project-preview {
+  width: 100%;
+  border-radius: 20px;
+  padding-top: 30px;
+}
+.projects-icons {
+  width: 10%;
+  height: 10%;
+  margin: auto;
+}
+
 .descriptionStack {
   font-size: 18px;
   color: rgb(255, 255, 255);
@@ -80,8 +93,77 @@ section {
   z-index: -2;
   margin: 0 auto;
   transform: scale(1.5);
-
   opacity: 1;
   transition: opacity 0.5;
   animation: spin 5s linear infinite;
+}
+
+@media only screen and (min-width: 750px) {
+  .card {
+    width: 25rem;
+    height: 55rem;
+  }
+
+  .project-title {
+    font-size: 3rem;
+    margin-top: 60px;
+  }
+  .project-preview {
+    width: 100%;
+    border-radius: 20px;
+    height: 85%;
+  }
+  .projects-icons {
+    width: 13%;
+    height: 13%;
+    margin: auto;
+  }
+  .descriptionStack {
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .project-container {
+    margin-left: 22rem;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .project-container {
+    margin-left: 35rem;
+  }
+  .card {
+    width: 35rem;
+    height: 60rem;
+  }
+
+  .project-title {
+    font-size: 3rem;
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  .project-container {
+    margin-left: 40rem;
+  }
+  .card {
+    width: 35rem;
+    height: 60rem;
+  }
+
+  .project-title {
+    margin-top: 75px;
+  }
+
+  .descriptionStack {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 2050px) {
+  .project-container {
+    margin-left: 57rem;
+  }
 }
