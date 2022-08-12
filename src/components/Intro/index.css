@@ -1,16 +1,13 @@
-<<<<<<< HEAD
 .Intro-text {
   padding: 10px;
 }
 .name {
   font-size: 4rem;
-  margin-top: 2rem;
-=======
+}
 .intro-name {
   font-size: 3.4rem;
   text-shadow: 5px 5px 5px black;
   border-bottom: 4px solid lime;
->>>>>>> develop
 }
 .intro-title {
   font-size: 2.5rem;
