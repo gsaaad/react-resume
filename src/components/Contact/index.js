@@ -107,11 +107,8 @@ function ContactMeForm() {
             <p>{errorMessage}</p>
           </div>
         )}
-<<<<<<< HEAD
-        <button data-testid="button" type="submit" className="submit-btn">
-=======
+
         <button data-testid="button" type="submit" className="contact-button">
->>>>>>> develop
           Submit
         </button>
       </form>
