@@ -57,12 +57,14 @@ function ContactMeForm() {
     }
   }
   return (
-    <section className="contact-container">
-      <h1 className="contact-title">Contact me</h1>
+    <section className="contact-container border-b-4 border-rose-900 ">
+      <h1 className="contact-title border-b-4 border-emerald-900 m-4">
+        Contact me
+      </h1>
       <form
         id="contact-form"
         onSubmit={handleSubmitForm}
-        className="contact-form"
+        className="contact-form mx-8"
       >
         <div>
           <label htmlFor="name" className="contact-labels">
@@ -92,7 +94,7 @@ function ContactMeForm() {
           </label>
           <textarea
             name="message"
-            placeholder="Send me a message, will get back to you shortly."
+            placeholder="Send me a message!"
             defaultValue={message}
             onBlur={handleChangeInForm}
           ></textarea>
@@ -108,7 +110,11 @@ function ContactMeForm() {
           </div>
         )}
 
-        <button data-testid="button" type="submit" className="contact-button">
+        <button
+          data-testid="button"
+          type="submit"
+          className="contact-button mx-auto bg-emerald-700 my-8"
+        >
           Submit
         </button>
       </form>

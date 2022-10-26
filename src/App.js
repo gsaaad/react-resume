@@ -14,7 +14,7 @@ function App() {
   const [category] = useState([
     { name: "About", component: <About></About> },
     { name: "Resume", component: <Resume></Resume> },
-    { name: "Project", component: <Project></Project> },
+    { name: "Projects", component: <Project></Project> },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState([category[0]]);
@@ -23,7 +23,7 @@ function App() {
   console.log(category[0], "category 0");
 
   return (
-    <div className="App ">
+    <div className="App bg-gradient-to-b from-emerald-800 via-emerald-500 to-emerald-800">
       <Header
         category={category}
         currentCategory={currentCategory}

@@ -23,26 +23,24 @@ function Resume() {
       <div>
         <div className="experiences">
           <div className="desc">
-            <div className="job-title">Behavior Support Specialist</div>
-            <div className="job-workplace">Safe Management Group</div>
-            <div className="job-date">2020-Present</div>
-            <div>
+            <div className="job-title">Full Stack Developer</div>
+            <div className="job-workplace">FREE LANCER</div>
+            <div className="job-date">2021-current</div>
+            <div className="descp">
               <ul>
                 <li className="job-descp">
-                  Provided individualized planning, promoting personal choices,
-                  opportunities and responsibilities for the clients
+                  Created user-friendly applications to satisfy their needs and
+                  enhance performance
                 </li>
                 <li className="job-descp">
-                  Promoted and supported meaningful relationships and provided
-                  safe, supportive, care and services
+                  Designed wireframes and implemented css framesworks like
+                  Bootstrap and TailwinCSS
                 </li>
                 <li className="job-descp">
-                  Implementing the unique Behaviour Support Plans for each
-                  client to ensure an increased quality of life
+                  Utilized Python in extracting and manipulating data to be
+                  displayed on React project
                 </li>
-                <li className="job-descp">
-                  Administering medication for each client on time
-                </li>
+                <li className="job-descp">Deployed MERN Projects to Heroku</li>
               </ul>
             </div>
           </div>

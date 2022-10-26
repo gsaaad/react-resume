@@ -1,23 +1,30 @@
 import React from "react";
 import "./index.css";
-
+import portFolioPic from "../../assets/img/Portfolio2.0.jpg";
 function About() {
   return (
     <div>
-      <h1 className="about-title">About</h1>
-      <div className="grid grid-rows-2 justify-items-center gap-12 lg:grid-cols-2">
+      <h1 className="about-title ">About</h1>
+      <div className="grid grid-rows-2 justify-items-center gap-12 lg:grid-cols-1 p-2 m-2">
         <p className="about-desc">
           When I am not coding, you can usually find me at the gym getting a
           good workout in, or even doing a long hot yoga session to relieve
-          daily stress. I like to go for hikes, go to local events and hangout
-          in within a community or with friends. Love to share ideas and good
-          laughs/jokes with like-minded individuals, positive interactions and
-          meaningful relationshipsMy favourite foods are pizza, smash burgers,
-          hearty salads, and sushi. I love to watch sports and draw/paint when I
-          have additional time~!
+          daily stress.
+        </p>
+        <p className="about-desc">
+          I like to go for hikes, go to local events and hangout in within a
+          community or with friends.
+        </p>
+        <p className="about-desc">
+          Love to share ideas and good laughs/jokes with like-minded
+          individuals, positive interactions and meaningful relationshipsMy
+          favourite foods are pizza, smash burgers, hearty salads, and sushi.
+        </p>
+        <p className="about-desc">
+          I love to watch sports and draw/paint when I have additional time~!
         </p>
         <img
-          src="https://www.verifyglobal.com/wp-content/uploads/2017/08/team-headshot-placeholder-male-200x300.jpg"
+          src={portFolioPic}
           className="about-image"
           alt="George Saad portfolio"
         />
@@ -30,7 +37,7 @@ function About() {
               Github: <span>https://github.com/gsaaad</span>
             </li>
             <li>
-              Email: <span>gsparqcode@gmail.com</span>
+              Email: <span>saad.george@live.com</span>
             </li>
             <li>
               LinkedIn: <span>https://www.linkedin.com/in/georgesaad7/</span>
