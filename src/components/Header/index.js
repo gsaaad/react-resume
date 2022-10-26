@@ -9,7 +9,7 @@ function Header(props) {
   return (
     <div>
       <header>
-        <nav className="navbar bg-gradient-to-r from-sky-200 via-emerald-500 to-emerald-800 border-b-4 border-rose-900">
+        <nav className="navbar bg-gradient-to-r from-sky-200 via-emerald-500 to-emerald-800 border-b-4 border-yellow-400">
           <a className="navbar-initials font-semibold" href="/">
             GS
           </a>

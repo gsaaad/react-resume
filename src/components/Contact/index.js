@@ -57,8 +57,8 @@ function ContactMeForm() {
     }
   }
   return (
-    <section className="contact-container border-b-4 border-rose-900 ">
-      <h1 className="contact-title border-b-4 border-emerald-900 m-4">
+    <section className="contact-container border-b-4 border-yellow-500 ">
+      <h1 className="contact-title border-b-4 border-yellow-400 m-4">
         Contact me
       </h1>
       <form
@@ -113,7 +113,7 @@ function ContactMeForm() {
         <button
           data-testid="button"
           type="submit"
-          className="contact-button mx-auto bg-emerald-700 my-8"
+          className="contact-button mx-auto bg-emerald-700 my-4"
         >
           Submit
         </button>

@@ -3,49 +3,65 @@ import portfolioPhoto from "../../assets/img/Portfolio_Pic.jpg";
 import "./index.css";
 function Intro() {
   return (
-    <section className="grid grid-rows-1 xl:grid-cols-2">
-      <div className="intro-self ">
-        <h1 className="intro-name border-b-4 border-sky-200">George Saad</h1>
-        <h2 className="intro-title text-sky-200">Full Stack Developer</h2>
-        <p className="intro-descp text-md m-4 mt-8 lg:text-3xl lg:mr-32">
-          Curious Full Stack Developer utilizing my background knowledge in{" "}
-          <span className="text-emerald-300 ">Psychology & Neuroscience</span>{" "}
-          to build a more intuitive, enhanced user experience using applications
-          and services.
-        </p>
-        <p className="intro-descp text-md m-4 mt-8 lg:text-3xl lg:mr-32">
-          Great Attitude, hard work ethic, Practicing industry standards,{" "}
-          <span className="text-emerald-300 m-2">
-            learning new technologies and challenging myself
-          </span>
-        </p>
-        <div className="photo-container">
-          <img
-            src={portfolioPhoto}
-            alt=""
-            className="portfolioPhoto mx-auto shadow-xl shadow-emerald-900/100"
-          />
+    <section className="grid grid-rows-1 md:grid-cols-2 xl:p-16">
+      <div className="photo-container col m-4">
+        <img
+          src={portfolioPhoto}
+          alt=""
+          className="portfolioPhoto mx-auto shadow-xl shadow-emerald-900/100 w-5/6  md:mt-32"
+        />
+        <div>
+          <p className="intro-descp text-md m-4 mt-8 lg:text-2xl">
+            Curious Full Stack Developer utilizing my background{" "}
+            <span className="text-yellow-400 border-b-2 border-slate-900 rounded-md font-bold ">
+              Psychology & Neuroscience
+            </span>{" "}
+            to build a more intuitive, enhanced user experience using
+            applications and services.
+          </p>
+          <p className="intro-descp text-md m-4 mt-8 lg:text-2xl">
+            Great Attitude, hard work ethic, Practicing industry standards, as
+            well as{" "}
+            <span className="text-yellow-400 border-b-2 border-slate-900 rounded-md font-bold m-2">
+              learning new technologies and challenging myself
+            </span>
+          </p>
         </div>
-        <p className="intro-descp2 text-md m-4  mt-8 lg:text-3xl lg:mr-32">
+      </div>
+      <div className="intro-self col ">
+        <h1 className="intro-name border-b-4 border-yellow-400 ">
+          George Saad
+        </h1>
+        <h2 className="intro-title text-emerald-200">Full Stack Developer</h2>
+
+        <p className="intro-descp2 text-md m-4  mt-8 lg:text-3xl ">
           Expanding my skills in
-          <span className="text-emerald-300 m-2">JavaScript</span>, React, Next,
-          Node, Python, and stylizing with Tailwind.
+          <span className="text-emerald-300 font-bold m-2">
+            JavaScript
+          </span>, <span className="text-emerald-300 font-bold m-2">React</span>
+          , Next, Node,{" "}
+          <span className="text-emerald-300 font-bold m-2">Python</span>, and
+          stylizing with Tailwind.
         </p>
-        <p className="intro-descp2 text-md lg:text-3xl lg:mr-32">
+        <p className="intro-descp2 text-md lg:text-3xl ">
           A proven leader and{" "}
-          <span className="text-emerald-300 ">effective team player</span>.
-          Passionate, ambitious and{" "}
-          <span className="text-emerald-300">detail-oriented</span>
+          <span className="text-emerald-900 font-bold ">
+            effective team player
+          </span>
+          . Passionate, ambitious and{" "}
+          <span className="text-emerald-900 font-bold">detail-oriented</span>
         </p>
-        <span className="text-3xl mt-8 text-sky-400 ">Interested about</span>
-        <p className="intro-descp3 text-md   lg:text-3xl lg:mr-32">
+        <span className="text-3xl mt-8 text-yellow-400 font-bold ">
+          Interested about
+        </span>
+        <p className="intro-descp3 text-md   lg:text-3xl ">
           Data Analysis, Web Development,
-          <span className="text-emerald-300">
+          <span className="text-emerald-900 font-bold">
             {" "}
             Full Stack, Web Analytics, Data Science
           </span>
           , Front-End, Back-End,{" "}
-          <span className="text-emerald-300">
+          <span className="text-emerald-900 font-bold">
             Data Vizualization, Health-Tech, Blockchain.
           </span>
         </p>

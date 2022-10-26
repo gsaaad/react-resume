@@ -4,7 +4,7 @@ import "./index.css";
 function Skills() {
   return (
     <section>
-      <h2 className="skills-title border-b-4 border-emerald-900 m-4">Skills</h2>
+      <h2 className="skills-title border-b-4 border-yellow-400 m-4">Skills</h2>
       <ul className="skills-list wrap-me">
         <li>JavaScript</li>
         <li>React</li>
