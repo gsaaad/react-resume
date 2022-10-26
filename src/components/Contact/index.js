@@ -64,9 +64,9 @@ function ContactMeForm() {
       <form
         id="contact-form"
         onSubmit={handleSubmitForm}
-        className="contact-form mx-8"
+        className="contact-form mx-auto md:w-4/5"
       >
-        <div>
+        <div className="w-4/5 mx-auto">
           <label htmlFor="name" className="contact-labels">
             Name:
           </label>
@@ -77,7 +77,7 @@ function ContactMeForm() {
             onBlur={handleChangeInForm}
           ></input>
         </div>
-        <div>
+        <div className="w-4/5 mx-auto">
           <label htmlFor="email" className="contact-labels">
             Email:
           </label>
@@ -88,7 +88,7 @@ function ContactMeForm() {
             onBlur={handleChangeInForm}
           ></input>
         </div>
-        <div>
+        <div className="w-4/5 mx-auto">
           <label htmlFor="message" className="contact-labels">
             Message:
           </label>
