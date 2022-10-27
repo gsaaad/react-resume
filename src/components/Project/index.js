@@ -13,7 +13,7 @@ function Project() {
     {
       Name: "DineIn",
       Description:
-        " This application fulfills the needs of users at home. Enhance your meals by having the restaurant experience at the comfort of your home. DineIn lets users get random drink from a selection of cocktails, as well as a meal to enjoy that with.",
+        "Enhance your meals by having the restaurant experience at the comfort of your home. DineIn lets users get random drink from a selection of cocktails, as well as a meal to enjoy that with.",
       Stack: "HTML, CSS, JavaScript, Tailwind CSS, JQUERY",
       Repo: "https://github.com/gsaaad/DineInside",
       AppLink: "https://gsaaad.github.io/DineInside/",
@@ -41,7 +41,7 @@ function Project() {
     {
       Name: "Coding Dojo",
       Description:
-        "Are you smarter than a ..... Coding Dojo?! Test your Javascript knowledge with these challenging questions. If you think you can make it. Top 5... you'll hold a special position in the High Roller Club",
+        "Are you brave enough to take on the Coding Dojo?! Test your Javascript knowledge with these challenging questions. If you think you can make it. Top 5... you'll hold a special position in the High Roller Club",
       Stack: "HTML, CSS, JavaScript",
       Repo: "https://github.com/gsaaad/Coding-Dojo-JS",
       AppLink: "https://gsaaad.github.io/Coding-Dojo-JS/",
@@ -59,7 +59,7 @@ function Project() {
     {
       Name: "Most To Coast",
       Description:
-        "This app will reduce travel planning time. Creating a time schedule for the trip would be a little troublesome to some people and sometimes have no clue where one should go and how they should plan. This app will be the solution to those problems.",
+        "Share your trips and their events to the public or your friends!",
       Stack:
         "HTML,CSS, JavaScript, Node.js, Express.js, NPM, Path, React & React Router, MongoDB, Apollo Server, GQL, Apollo Client, JSON Web Token(JWT)",
       Repo: "https://github.com/gsaaad/Most_to_Coast",
@@ -69,33 +69,45 @@ function Project() {
   ];
 
   return (
-    <section className="project-container">
-      <h1 className=" text-4xl  border-b-4 border-yellow-500 m-16 rounded">
+    <section>
+      <h1 className=" text-4xl  border-b-4 border-yellow-500 m-16 rounded font-bold">
         Projects
       </h1>
-      <div className="project-holder w-4/5 mx-auto">
+      <div className=" w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         {projects.map(({ Name, Description, Stack, Repo, AppLink, image }) => (
           <article
-            className="card w-5/6 before:bg-gradient-to-b from-sky-300 via-emerald-600 to-emerald-900"
-            style={{ margin: "120px 30px" }}
+            className="card w-5/6 p-4"
+            style={{ margin: "40px 30px" }}
             key={Name}
           >
             <a href={AppLink}>
               <img src={image} alt="" className="project-preview" />
             </a>
-            <div className="flex m-2">
+            <div className="grid grid-cols-2 ">
               <a href={Repo}>
-                <img src={githubLogo} alt="" className="projects-icons" />
+                <img
+                  src={githubLogo}
+                  alt=""
+                  className="projects-icons mx-auto mt-12"
+                />
               </a>
               <a href={AppLink}>
-                <img src={DeployLogo} alt="" className="projects-icons" />
+                <img
+                  src={DeployLogo}
+                  alt=""
+                  className="projects-icons mx-auto mt-12"
+                />
               </a>
             </div>
-            <h2 className="project-title text-emerald-200 text-3xl border-b-4 border-yellow-500 rounded-lg">
+            <h2 className="project-title text-emerald-200 text-3xl border-b-4 border-yellow-500 rounded-lg m-2">
               {Name}
             </h2>
-            <p className="descriptionStack">{Description}</p>
-            <p className="descriptionStack">Stack: {Stack}</p>
+            <p className="descriptionStack text-lg">{Description}</p>
+
+            <span className="text-emerald-200 m-2 border-b-2 border-yellow-500 text-xl">
+              Stack:
+            </span>
+            <p className="text-lg">{Stack}</p>
           </article>
         ))}
       </div>
