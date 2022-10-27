@@ -11,6 +11,9 @@ import Resume from "./components/Resume";
 import { useState } from "react";
 
 function App() {
+  var resumeTitle = document.title;
+  console.log(resumeTitle);
+
   const [category] = useState([
     { name: "About", component: <About></About> },
     { name: "Resume", component: <Resume></Resume> },
