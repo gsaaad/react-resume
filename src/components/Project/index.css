@@ -19,56 +19,27 @@
     --rotate: 360deg;
   }
 }
-.project-container {
-  margin-left: 8rem;
-}
-.Projects {
-  margin-top: 20px;
-  font-size: 4.5rem;
-  border-bottom: 4px solid lime;
-}
-
-p {
-  font-size: 18.5px;
-  font-weight: 500;
-}
 
 .card {
   display: flex;
   flex-direction: column;
-  margin: auto;
   align-items: center;
   text-align: center;
-  justify-content: center;
-  background: #191c29;
-  width: 20rem;
-  height: 40rem;
   position: relative;
-  border-radius: 5px;
-  filter: drop-shadow(0 0 1.5rem hsl(207, 100%, 56%));
+  border-radius: 5%;
+  filter: drop-shadow(0 0 1.5rem hsl(163, 100%, 45%));
 }
 .card:before {
   content: "";
   width: 110%;
-  height: 104%;
-  border-radius: 5px;
-  background-image: linear-gradient(
-    var(--rotate),
-    #67e8f9,
-    #2a63ab 20%,
-    #001842
-  );
+  height: 102%;
+  border-radius: 5%;
   position: absolute;
   animation: spin 3s linear infinite;
   z-index: -2;
 }
-.card > h2 {
-  border-bottom: 3px solid hsl(207, 100%, 56%);
-}
+
 .project-title {
-  font-size: 2.5rem;
-  margin: 10px 5px;
-  color: rgb(0, 98, 218);
   text-shadow: 0.25px 0.25px 0.25px hsl(207, 100%, 56%), 3px 3px 3px #55038b;
 }
 .project-preview {
@@ -77,13 +48,12 @@ p {
   padding-top: 30px;
 }
 .projects-icons {
-  width: 10%;
-  height: 10%;
+  width: 44%;
+  height: 44%;
   margin: auto;
 }
 
 .descriptionStack {
-  font-size: 18px;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 1px black;
 }
@@ -97,7 +67,7 @@ p {
   transition: opacity 0.5;
   animation: spin 5s linear infinite;
 }
-
+/* 
 @media only screen and (min-width: 750px) {
   .card {
     width: 25rem;
@@ -124,15 +94,15 @@ p {
     text-shadow: 1px 1px 1px black;
   }
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 730px) {
   .project-container {
-    margin-left: 22rem;
+    margin-left: 11rem;
   }
 }
 
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 1050px) {
   .project-container {
-    margin-left: 35rem;
+    margin-left: 15rem;
   }
   .card {
     width: 35rem;
@@ -166,4 +136,4 @@ p {
   .project-container {
     margin-left: 57rem;
   }
-}
+} */

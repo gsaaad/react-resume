@@ -70,66 +70,36 @@ function Project() {
 
   return (
     <section className="project-container">
-      <h1 className="Projects">Projects</h1>
-      <div className="project-holder">
+      <h1 className=" text-4xl  border-b-4 border-yellow-500 m-16 rounded">
+        Projects
+      </h1>
+      <div className="project-holder w-4/5 mx-auto">
         {projects.map(({ Name, Description, Stack, Repo, AppLink, image }) => (
-          <article className="card" style={{ margin: "150px 0px" }}>
+          <article
+            className="card w-5/6 before:bg-gradient-to-b from-sky-300 via-emerald-600 to-emerald-900"
+            style={{ margin: "120px 30px" }}
+            key={Name}
+          >
             <a href={AppLink}>
               <img src={image} alt="" className="project-preview" />
-              <div className="Repo-Deploy">
-                <a href={Repo} className="project-links">
-                  <img src={githubLogo} alt="" className="projects-icons" />
-                </a>
-                <a href={AppLink} className="project-links">
-                  <img src={DeployLogo} alt="" className="projects-icons" />
-                </a>
-              </div>
             </a>
-            <h2 className="project-title">{Name}</h2>
+            <div className="flex m-2">
+              <a href={Repo}>
+                <img src={githubLogo} alt="" className="projects-icons" />
+              </a>
+              <a href={AppLink}>
+                <img src={DeployLogo} alt="" className="projects-icons" />
+              </a>
+            </div>
+            <h2 className="project-title text-emerald-200 text-3xl border-b-4 border-yellow-500 rounded-lg">
+              {Name}
+            </h2>
             <p className="descriptionStack">{Description}</p>
             <p className="descriptionStack">Stack: {Stack}</p>
           </article>
         ))}
       </div>
     </section>
-
-    // <article className="card">
-    //   <a href="https://gsaaad.github.io/DineInside/">
-    //     <img
-    //       src={JackedInTheBox}
-    //       alt=""
-    //       style={{ width: "100%", borderRadius: "5px" }}
-    //     />
-    //     <div className="Repo-Deploy">
-    //       <a href= {Repo}>
-
-    //       <img
-    //         src={githubLogo}
-    //         alt=""
-    //         style={{ width: "15%", height: "15%", margin: "0px 50px" }}
-    //         />
-    //         </a >
-    //         <a href={deploy}>
-
-    //       <img
-    //         src={DeployLogo}
-    //         alt=""
-    //         style={{ width: "15%", height: "15%", margin: "0px 50px" }}
-    //         />
-    //         </a>
-    //     </div>
-    //   </a>
-    //   <h2 className="project-title">Jacked In The Box</h2>
-    //   <p className="descriptionStack">
-    //     Time to take your workouts seriously! Come try out and register with
-    //     JackedInTheBox, to get exercise motion GIPHY, and calculate your BMI
-    //     with your Age, Height, and Weight!
-    //   </p>
-    //   <p className="descriptionStack">
-    //     Stack: HTML, CSS, JavaScript, Tailwind CSS, Handlebars, JQUERY, NODE,
-    //     EXPRESS, BOOSTRAP, Sequelize, MYSQL
-    //   </p>
-    // </article>
   );
 }
 
