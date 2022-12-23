@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Intro from "./components/Intro";
 import Resume from "./components/Resume";
+import Calendly from "./components/Calendly";
 
 // react notifications component
 import { ReactNotifications } from "react-notifications-component";
@@ -49,6 +50,7 @@ function App() {
           )}
         </main>
       </section>
+      <Calendly></Calendly>
       <Contact></Contact>
       <Footer></Footer>
       <script src="https://cdn.tailwindcss.com"></script>

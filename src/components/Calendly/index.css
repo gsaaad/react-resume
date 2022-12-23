@@ -1,0 +1,10 @@
+.calendly-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  margin: 5px;
+}
+
+.calendly-title {
+  font-size: 40px;
+}
