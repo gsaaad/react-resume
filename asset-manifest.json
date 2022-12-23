@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/react-resume/static/css/main.961cd99f.css",
-    "main.js": "/react-resume/static/js/main.bae5e997.js",
+    "main.css": "/react-resume/static/css/main.35830504.css",
+    "main.js": "/react-resume/static/js/main.0b694968.js",
     "static/media/DineIn.png": "/react-resume/static/media/DineIn.e203241440e7d9159959.png",
     "static/media/Portfolio2.0.jpg": "/react-resume/static/media/Portfolio2.0.c3e6be26e840867d474f.jpg",
-    "static/media/Portfolio_Pic.jpg": "/react-resume/static/media/Portfolio_Pic.e584c7d94d17f5be0418.jpg",
     "static/media/weather-App.png": "/react-resume/static/media/weather-App.e2cfcb3691f9d8b1bbc5.png",
+    "static/media/Portfolio_Pic.jpg": "/react-resume/static/media/Portfolio_Pic.05c216834f770a84d93e.jpg",
     "static/media/JackedInTheBoxPreview.png": "/react-resume/static/media/JackedInTheBoxPreview.a1ed1ce4ab712bb939e5.png",
     "static/media/CodingQuiz.png": "/react-resume/static/media/CodingQuiz.919900e5459cc57b246d.png",
     "static/media/MOST_COAST.png": "/react-resume/static/media/MOST_COAST.cf548032a448e3e7f369.png",
     "static/media/daySchedular.png": "/react-resume/static/media/daySchedular.2931c983d86d27eb3fa9.png",
     "static/media/github-brands.svg": "/react-resume/static/media/github-brands.833b63e28cadf07403bc81451d30b858.svg",
     "static/media/arrow-up-right-from-square-solid.svg": "/react-resume/static/media/arrow-up-right-from-square-solid.593fc4e665a2b5339acb9500ad5c7dea.svg",
-    "static/media/circle-exclamation-solid.svg": "/react-resume/static/media/circle-exclamation-solid.0409905b644f012d1d74ce4121272fd3.svg",
     "index.html": "/react-resume/index.html",
-    "main.961cd99f.css.map": "/react-resume/static/css/main.961cd99f.css.map",
-    "main.bae5e997.js.map": "/react-resume/static/js/main.bae5e997.js.map"
+    "main.35830504.css.map": "/react-resume/static/css/main.35830504.css.map",
+    "main.0b694968.js.map": "/react-resume/static/js/main.0b694968.js.map"
   },
   "entrypoints": [
-    "static/css/main.961cd99f.css",
-    "static/js/main.bae5e997.js"
+    "static/css/main.35830504.css",
+    "static/js/main.0b694968.js"
   ]
 }
