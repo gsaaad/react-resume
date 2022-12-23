@@ -9,13 +9,14 @@ function Header(props) {
   return (
     <div>
       <header>
-        <nav className="navbar">
-          <a className="navbar-initials" href="/">
+        <nav className="navbar bg-gradient-to-r from-sky-200 via-emerald-500 to-emerald-800 border-b-4 border-yellow-400">
+          <a className="navbar-initials font-semibold" href="/">
             GS
           </a>
-          <ul className="navbar-list">
+          <ul className="navbar-list font-semibold">
             {category.map((eachCategory) => (
               <li
+                key={eachCategory.name}
                 className={` ${
                   currentCategory.name === category.name && "navActive"
                 }

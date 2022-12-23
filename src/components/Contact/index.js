@@ -63,14 +63,16 @@ function ContactMeForm() {
     }
   }
   return (
-    <section className="contact-container">
-      <h1 className="contact-title">Contact me</h1>
+    <section className="contact-container border-b-4 border-yellow-500 ">
+      <h1 className="contact-title border-b-4 border-yellow-400 m-4">
+        Contact me
+      </h1>
       <form
         id="contact-form"
         onSubmit={handleSubmitForm}
-        className="contact-form"
+        className="contact-form mx-auto md:w-4/5"
       >
-        <div>
+        <div className="w-4/5 mx-auto">
           <label htmlFor="name" className="contact-labels">
             Name:
           </label>
@@ -81,7 +83,7 @@ function ContactMeForm() {
             onBlur={handleChangeInForm}
           ></input>
         </div>
-        <div>
+        <div className="w-4/5 mx-auto">
           <label htmlFor="email" className="contact-labels">
             Email:
           </label>
@@ -92,13 +94,13 @@ function ContactMeForm() {
             onBlur={handleChangeInForm}
           ></input>
         </div>
-        <div>
+        <div className="w-4/5 mx-auto">
           <label htmlFor="message" className="contact-labels">
             Message:
           </label>
           <textarea
             name="message"
-            placeholder="Send me a message, will get back to you shortly."
+            placeholder="Send me a message!"
             defaultValue={message}
             onBlur={handleChangeInForm}
           ></textarea>
@@ -113,7 +115,12 @@ function ContactMeForm() {
             <p>{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit" className="contact-button">
+
+        <button
+          data-testid="button"
+          type="submit"
+          className="contact-button mx-auto bg-emerald-700 my-4"
+        >
           Submit
         </button>
       </form>

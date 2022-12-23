@@ -1,0 +1,195 @@
+.Exp {
+  display: flex;
+  flex-direction: row;
+  border: 10px groove #1c1c1c;
+}
+.sidebar {
+  width: 20%;
+  background-color: #333333;
+  border-right: 10px ridge rgb(100, 90, 0);
+}
+.ContactMe {
+  background: linear-gradient(
+    #ff6600,
+    #ff8c00,
+    #ffa000,
+    #ffbf00,
+    #ffbf00,
+    #ffbf00
+  );
+  text-align: center;
+  margin: 10px;
+  border-radius: 20px;
+  border: 2px ridge rgb(255, 234, 113);
+}
+.details-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  position: absolute;
+  left: 130px;
+  top: 50px;
+  border: 1px solid rgb(0, 255, 234);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details-circle1 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  position: absolute;
+  left: 170px;
+  top: 50px;
+  border: 1px solid rgb(0, 255, 234);
+}
+.details-circle2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  position: absolute;
+  left: 210px;
+  top: 50px;
+  border: 1px solid rgb(0, 255, 234);
+}
+.details-circle3 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  position: absolute;
+  left: 250px;
+  top: 50px;
+  border: 1px solid rgb(0, 255, 234);
+}
+.details-circle4 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  position: absolute;
+  left: 290px;
+  top: 50px;
+  border: 0.5px solid rgb(0, 255, 234);
+}
+.TITLEN {
+  border-bottom: 6px ridge goldenrod;
+  border-left: 6px groove goldenrod;
+  border-right: 6px groove gold;
+  border-top: 6px groove gold;
+  background-color: rgb(241, 252, 255);
+}
+
+img {
+  border-radius: 20px;
+  margin: 10px;
+  height: 45vmin;
+}
+.sidebar-main {
+  margin: 5px;
+}
+.Connect {
+  font-size: 27px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 30px;
+  color: #eeeeee;
+}
+
+.ExpPanel {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.CareerProfile {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.careerstatement {
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: 50px;
+  text-align: center;
+  padding: 10px;
+}
+.ExperienceTitle {
+  font-size: 40px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.Experience {
+  margin-left: 50px;
+  text-align: center;
+}
+.Work {
+  border: 2px groove greenyellow;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.jtitle {
+  font-size: 40px;
+  color: black;
+  border-top: 0.3ex groove #222;
+  border-bottom: 0.3ex groove #222;
+  position: relative;
+  margin: 50px;
+}
+.workplace {
+  font-size: 35px;
+  float: left;
+  margin-left: 50px;
+  border-top: 0.25ex groove black;
+  border-bottom: 0.25ex groove black;
+}
+.date {
+  font-size: 30px;
+  float: right;
+  margin-right: 50px;
+  border-bottom: 0.25ex groove black;
+  border-top: 0.25ex groove black;
+}
+.descp {
+  margin: 120px;
+  font-size: 30px;
+  display: flex;
+}
+
+.School {
+  border: 2px groove purple;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-size: 40px;
+  margin-right: 50px;
+}
+.Degree {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.Minor {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+.job-descp {
+  margin-top: 50px;
+}
