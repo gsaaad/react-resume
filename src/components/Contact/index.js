@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./index.css";
 import validateEmail from "../../utils/validateEmail";
+import validateName from "../../utils/validateEmail";
 import errorIcon from "../../assets/img/circle-exclamation-solid.svg";
+
 import emailjs from "@emailjs/browser";
 
 function ContactMeForm() {
@@ -19,14 +21,23 @@ function ContactMeForm() {
 
   function handleChangeInForm(e) {
     if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
+      const isValidEmail = validateEmail(e.target.value);
 
       //   if its not valid
-      if (!isValid) {
+      if (!isValidEmail) {
         setErrorMessage(
           "Email is invalid.. Please enter a valid email address"
         );
         // if valid, no error message
+      } else {
+        setErrorMessage("");
+      }
+    } else if (e.target.name === "name") {
+      const isValidName = validateName(e.target.value);
+      if (!isValidName) {
+        setErrorMessage(
+          "Name is invalid.. Please enter a valid name (no numbers or symbols)"
+        );
       } else {
         setErrorMessage("");
       }
@@ -41,7 +52,6 @@ function ContactMeForm() {
     // use the spread operator ...formState,
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log("handle Form", formState);
     }
   }
   function handleSubmitForm(e) {
@@ -49,17 +59,18 @@ function ContactMeForm() {
     // if there's no errors, send form
     if (!errorMessage) {
       // send form using emailjs
-    // if there's no errors and there's input of something, send form
-    var userName = e.target[0].value;
-    var userEmail = e.target[1].value;
-    var userMessage = e.target[2].value;
+      // if there's no errors and there's input of something, send form
+      var userName = validateName(e.target[0].value);
+      var userEmail = validateEmail(e.target[1].value);
+      var userMessage = e.target[2].value;
 
-    if (!errorMessage && userName && userEmail && userMessage) {
-      console.log("Submit Form", formState);
-    } else {
-      setErrorMessage(
-        "Invalid Name, Email or Message.. Please check again before you re-submit"
-      );
+      if (!errorMessage && userName && userEmail && userMessage) {
+        console.log("Submit Valid Form", formState);
+      } else {
+        setErrorMessage(
+          "Invalid Name, Email or Message.. Please check again before you re-submit"
+        );
+      }
     }
   }
   return (
@@ -126,6 +137,6 @@ function ContactMeForm() {
       </form>
     </section>
   );
-}}
+}
 
 export default ContactMeForm;
