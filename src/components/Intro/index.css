@@ -15,13 +15,13 @@
   margin: 5px 20px;
 }
 .intro-descp {
-  animation: fadeIn1 ease 4s;
+  animation: fadeIn1 ease-in-out 4s;
 }
 .intro-descp2 {
-  animation: fadeIn2 ease-in-out 6s;
+  animation: fadeIn2 ease-in-out 4s;
 }
 .intro-descp3 {
-  animation: fadeIn3 ease-in-out 6s;
+  animation: fadeIn3 ease-in-out 4s;
 }
 .intro-self {
   display: flex;
@@ -49,7 +49,7 @@
   } */
 
   from {
-    transform: translateX(-100%);
+    transform: translateX(-15%);
     opacity: 0;
   }
   to {
@@ -66,7 +66,7 @@
   } */
 
   from {
-    transform: translateX(300%);
+    transform: translateX(15%);
     opacity: 0;
   }
   to {
@@ -83,7 +83,7 @@
   } */
 
   from {
-    transform: translateY(400%);
+    transform: translateY(200%);
     opacity: 0;
   }
   to {

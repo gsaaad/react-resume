@@ -16,14 +16,12 @@ function Intro() {
             <span className="text-yellow-400 border-b-2 border-slate-900 rounded-md font-bold ">
               Psychology & Neuroscience
             </span>{" "}
-            to build a more intuitive, enhanced user experience using
-            applications and services.
+            to build a more intuitive, and enhanced user experience.
           </p>
           <p className="intro-descp text-md m-4 mt-8 lg:text-2xl">
-            Great Attitude, hard work ethic, Practicing industry standards, as
-            well as{" "}
+            Detail oriented, hard work ethic,
             <span className="text-yellow-400 border-b-2 border-slate-900 rounded-md font-bold m-2">
-              learning new technologies and challenging myself
+              learning new technologies & overcoming challenges
             </span>
           </p>
         </div>
@@ -35,13 +33,13 @@ function Intro() {
         <h2 className="intro-title text-emerald-200">Full Stack Developer</h2>
 
         <p className="intro-descp2 text-md m-4  mt-8 lg:text-3xl ">
-          Expanding my skills in
+          Experienced and proficient in
           <span className="text-emerald-300 font-bold m-2">
             JavaScript
           </span>, <span className="text-emerald-300 font-bold m-2">React</span>
-          , Next, Node,{" "}
+          , Next.js, Node,{" "}
           <span className="text-emerald-300 font-bold m-2">Python</span>, and
-          stylizing with Tailwind.
+          TailWindCSS
         </p>
         <p className="intro-descp2 text-md lg:text-3xl ">
           A proven leader and{" "}
@@ -55,14 +53,14 @@ function Intro() {
           Interested about
         </span>
         <p className="intro-descp3 text-md   lg:text-3xl ">
-          Data Analysis, Web Development,
+          Data Analysis, Web Application Development,
           <span className="text-emerald-900 font-bold">
             {" "}
-            Full Stack, Web Analytics, Data Science
+            Full Stack, MERN Stack
           </span>
           , Front-End, Back-End,{" "}
           <span className="text-emerald-900 font-bold">
-            Data Vizualization, Health-Tech, Blockchain.
+            Data Vizualization, Health-Tech.
           </span>
         </p>
       </div>
