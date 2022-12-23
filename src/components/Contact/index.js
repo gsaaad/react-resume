@@ -1,27 +1,23 @@
 import React, { useState, useRef } from "react";
 import "./index.css";
-import validateEmail from "../../utils/validateEmail";
-import validateName from "../../utils/validateEmail";
-import errorIcon from "../../assets/img/circle-exclamation-solid.svg";
-
 import emailjs from "@emailjs/browser";
+import validateEmail from "../../utils/validateInput";
+import { validateName } from "../../utils/validateInput";
+
+// react notifications Store
+import { Store } from "react-notifications-component";
 
 function ContactMeForm() {
   const [errorMessage, setErrorMessage] = useState("");
-  // const [formState, setFormState] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
 
   // const { name, email, message } = formState;
   const formRef = useRef();
 
   //   handleChangeInForm to get values from user input
-
   function handleChangeInForm(e) {
     if (e.target.name === "email") {
       const isValidEmail = validateEmail(e.target.value);
+      console.log(isValidEmail);
 
       //   if its not valid
       if (!isValidEmail) {
@@ -33,13 +29,22 @@ function ContactMeForm() {
         setErrorMessage("");
       }
     } else if (e.target.name === "name") {
-      console.log(e.target.value);
+      console.log("name validation", e.target.value, typeof e.target.name);
       const isValidName = validateName(e.target.value);
-      console.log(isValidName);
+      console.log("valid: ", isValidName);
       if (!isValidName) {
-        setErrorMessage(
-          "Name is invalid.. Please enter a valid name (no numbers or symbols)"
-        );
+        Store.addNotification({
+          title: "Name is Invalid",
+          message:
+            "Do not include numbers or symbols in your name. Only letters will be included",
+          type: "danger",
+          insert: "top",
+          container: "top-center",
+          dismiss: {
+            duration: 4500,
+            onScreen: true,
+          },
+        });
       } else {
         setErrorMessage("");
       }
@@ -70,7 +75,6 @@ function ContactMeForm() {
 
       if (!errorMessage && userName && userEmail && userMessage) {
         // emailjs sendform!
-        console.log(formRef.current);
         emailjs
           .sendForm(
             "service_952vhth",
@@ -80,10 +84,10 @@ function ContactMeForm() {
           )
           .then(
             function (response) {
-              console.log("response:", response.status, response.text);
+              console.log("Successful send!", response.status, response.text);
             },
             function (error) {
-              console.log("failed!", error);
+              console.log("Failed to send email..Try again later", error);
             }
           );
       } else {
@@ -137,16 +141,19 @@ function ContactMeForm() {
             onBlur={handleChangeInForm}
           ></textarea>
         </div>
-        {errorMessage && (
-          <div className="errorMessage">
-            <img
-              src={errorIcon}
-              alt="Error in form Contact"
-              className="icons"
-            />
-            <p>{errorMessage}</p>
-          </div>
-        )}
+        {/* {errorMessage &&
+          Store.addNotification({
+            title: "Form is not valid",
+            message:
+              "Do not include numbers or symbols in your name. Only letters will be included",
+            type: "danger",
+            insert: "top",
+            container: "top-center",
+            dismiss: {
+              duration: 4500,
+              onScreen: true,
+            },
+          })} */}
 
         <button
           data-testid="button"

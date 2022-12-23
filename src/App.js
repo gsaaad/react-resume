@@ -8,6 +8,10 @@ import Contact from "./components/Contact";
 import Intro from "./components/Intro";
 import Resume from "./components/Resume";
 
+// react notifications component
+import { ReactNotifications } from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
+
 import { useState } from "react";
 
 function App() {
@@ -27,6 +31,7 @@ function App() {
 
   return (
     <div className="App bg-gradient-to-b from-emerald-800 via-emerald-500 to-emerald-800">
+      <ReactNotifications />
       <Header
         category={category}
         currentCategory={currentCategory}
