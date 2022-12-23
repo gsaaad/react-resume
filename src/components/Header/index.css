@@ -1,35 +1,43 @@
-.Navbar {
+.navbar {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  /* font-size: 18px; */
-  color: white;
+  min-height: 3.5rem;
+  background-image: linear-gradient(#04215b, black);
 }
-a {
-  text-decoration: none;
-  color: white;
-  border-bottom: 3px solid #00aeff;
-}
-nav > h1 {
-  font-size: 30px;
-  margin-left: 20px;
+.navbar-initials {
+  font-size: 3rem;
   text-shadow: 5px 5px 5px black;
+  margin-left: 10px;
 }
 
 .navActive {
   border-bottom: 5px solid lime;
 }
 
-ul {
+.navbar-list {
   display: flex;
-  flex-direction: row;
-  margin: 10px 5px;
   list-style: none;
-  font-size: 20px;
 }
-ul > li {
-  margin: 5px 10px;
-  font-size: 20px;
+.navbar-list > li {
+  font-size: 1.7rem;
+  margin-right: 0.9em;
   text-shadow: 3px 3px 3px black;
+}
+@media only screen and (min-width: 768px) {
+  .navbar-initials {
+    font-size: 4rem;
+  }
+  .navbar-list > li {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .navbar-initials {
+    font-size: 4.5rem;
+  }
+  .navbar-list > li {
+    font-size: 3rem;
+  }
 }

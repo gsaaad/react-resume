@@ -49,15 +49,31 @@ function ContactMeForm() {
     // if there's no errors, send form
     if (!errorMessage) {
       // send form using emailjs
+    // if there's no errors and there's input of something, send form
+    var userName = e.target[0].value;
+    var userEmail = e.target[1].value;
+    var userMessage = e.target[2].value;
+
+    if (!errorMessage && userName && userEmail && userMessage) {
       console.log("Submit Form", formState);
+    } else {
+      setErrorMessage(
+        "Invalid Name, Email or Message.. Please check again before you re-submit"
+      );
     }
   }
   return (
-    <section>
-      <h1 className="Contact-title">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmitForm}>
+    <section className="contact-container">
+      <h1 className="contact-title">Contact me</h1>
+      <form
+        id="contact-form"
+        onSubmit={handleSubmitForm}
+        className="contact-form"
+      >
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name" className="contact-labels">
+            Name:
+          </label>
           <input
             name="name"
             type="text"
@@ -66,7 +82,9 @@ function ContactMeForm() {
           ></input>
         </div>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email" className="contact-labels">
+            Email:
+          </label>
           <input
             name="email"
             type="email"
@@ -75,26 +93,32 @@ function ContactMeForm() {
           ></input>
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message" className="contact-labels">
+            Message:
+          </label>
           <textarea
             name="message"
-            placeholder="Send me a message of how I can help you! Will get back to you shortly."
+            placeholder="Send me a message, will get back to you shortly."
             defaultValue={message}
             onBlur={handleChangeInForm}
           ></textarea>
         </div>
         {errorMessage && (
           <div className="errorMessage">
-            <img src={errorIcon} alt="Error in form Contact" />
+            <img
+              src={errorIcon}
+              alt="Error in form Contact"
+              className="icons"
+            />
             <p>{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">
+        <button data-testid="button" type="submit" className="contact-button">
           Submit
         </button>
       </form>
     </section>
   );
-}
+}}
 
 export default ContactMeForm;

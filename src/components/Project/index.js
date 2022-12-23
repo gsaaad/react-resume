@@ -47,7 +47,7 @@ function Project() {
       image: CodingQuizImage,
     },
     {
-      Name: "Work Day Scheduler",
+      Name: "Day Scheduler",
       Description:
         "Increase your productivity using this application! You can add events throughout your day. Intuitivly tell the time and what events/tasks you should prioritize.",
       Stack: "HTML, CSS, Javascript, Bootstrap, JQUERY",
@@ -58,39 +58,29 @@ function Project() {
   ];
 
   return (
-    <div>
+    <section className="project-container">
       <h1 className="Projects">Projects</h1>
-      {projects.map(({ Name, Description, Stack, Repo, AppLink, image }) => (
-        <article className="card" style={{ margin: "150px 0px" }}>
-          <a href={AppLink}>
-            <img
-              src={image}
-              alt=""
-              style={{ width: "100%", borderRadius: "5px", paddingTop: "30px" }}
-            />
-            <div className="Repo-Deploy">
-              <a href={Repo}>
-                <img
-                  src={githubLogo}
-                  alt=""
-                  style={{ width: "10%", height: "10%", margin: "0px 50px" }}
-                />
-              </a>
-              <a href={AppLink}>
-                <img
-                  src={DeployLogo}
-                  alt=""
-                  style={{ width: "10%", height: "10%", margin: "0px 50px" }}
-                />
-              </a>
-            </div>
-          </a>
-          <h2 className="project-title">{Name}</h2>
-          <p className="descriptionStack">{Description}</p>
-          <p className="descriptionStack">Stack: {Stack}</p>
-        </article>
-      ))}
-    </div>
+      <div className="project-holder">
+        {projects.map(({ Name, Description, Stack, Repo, AppLink, image }) => (
+          <article className="card" style={{ margin: "150px 0px" }}>
+            <a href={AppLink}>
+              <img src={image} alt="" className="project-preview" />
+              <div className="Repo-Deploy">
+                <a href={Repo} className="project-links">
+                  <img src={githubLogo} alt="" className="projects-icons" />
+                </a>
+                <a href={AppLink} className="project-links">
+                  <img src={DeployLogo} alt="" className="projects-icons" />
+                </a>
+              </div>
+            </a>
+            <h2 className="project-title">{Name}</h2>
+            <p className="descriptionStack">{Description}</p>
+            <p className="descriptionStack">Stack: {Stack}</p>
+          </article>
+        ))}
+      </div>
+    </section>
 
     // <article className="card">
     //   <a href="https://gsaaad.github.io/DineInside/">
