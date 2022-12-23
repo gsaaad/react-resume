@@ -16,28 +16,48 @@ function ContactMeForm() {
   //   handleChangeInForm to get values from user input
   function handleChangeInForm(e) {
     if (e.target.name === "email") {
-      const isValidEmail = validateEmail(e.target.value);
-      console.log(isValidEmail);
+      if (!!e.target.value) {
+        const isValidEmail = validateEmail(e.target.value);
+        console.log(isValidEmail);
 
-      //   if its not valid
-      if (!isValidEmail) {
-        setErrorMessage(
-          "Email is invalid.. Please enter a valid email address"
-        );
-        // if valid, no error message
+        //   if its not valid
+        if (!isValidEmail) {
+          Store.addNotification({
+            title: "Email is Invalid",
+            message: "Enter a valid email address",
+            insert: "top",
+            type: "warning",
+            container: "top-center",
+            dismiss: {
+              duration: 4500,
+              onScreen: true,
+            },
+          });
+          // if valid, no error message
+        } else {
+          setErrorMessage("");
+        }
       } else {
-        setErrorMessage("");
+        Store.addNotification({
+          title: "Email is Invalid",
+          message: "Please enter a valid email address",
+          insert: "top",
+          type: "warning",
+          container: "top-center",
+          dismiss: {
+            duration: 4500,
+            onScreen: true,
+          },
+        });
       }
     } else if (e.target.name === "name") {
-      console.log("name validation", e.target.value, typeof e.target.name);
       const isValidName = validateName(e.target.value);
-      console.log("valid: ", isValidName);
       if (!isValidName) {
         Store.addNotification({
           title: "Name is Invalid",
           message:
             "Do not include numbers or symbols in your name. Only letters will be included",
-          type: "danger",
+          type: "warning",
           insert: "top",
           container: "top-center",
           dismiss: {
@@ -55,11 +75,6 @@ function ContactMeForm() {
         setErrorMessage("");
       }
     }
-    // if there's no errors while taking input, everything is valid, then setFormState
-    // use the spread operator ...formState,
-    // if (!errorMessage) {
-    //   setFormState({ ...formState, [e.target.name]: e.target.value });
-    // }
   }
   function handleSubmitForm(e) {
     e.preventDefault();
@@ -84,10 +99,32 @@ function ContactMeForm() {
           )
           .then(
             function (response) {
-              console.log("Successful send!", response.status, response.text);
+              Store.addNotification({
+                title: "Success",
+                message: "You have send George an email.",
+                insert: "top",
+                type: "success",
+                container: "top-center",
+                dismiss: {
+                  duration: 4500,
+                  onScreen: true,
+                },
+              });
+              console.log(response);
             },
             function (error) {
-              console.log("Failed to send email..Try again later", error);
+              Store.addNotification({
+                title: "Error",
+                message: `There was an error on my end.. I will fix this shortly..`,
+                insert: "top",
+                type: "danger",
+                container: "top-center",
+                dismiss: {
+                  duration: 4500,
+                  onScreen: true,
+                },
+              });
+              console.error("Error Sending Email", error);
             }
           );
       } else {
