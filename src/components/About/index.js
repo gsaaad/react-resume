@@ -16,7 +16,7 @@ function About() {
           />
         </div>
         <div className="grid grid-rows-2 justify-items-center gap-12 p-4 lg:grid-cols-1 lg:mx-8">
-          <p className="text-md md:text-xl lg:text-2xl">
+          <p className="text-lg md:text-xl lg:text-2xl">
             When I am not coding, you can usually find me getting a{" "}
             <span className="text-emerald-900 font-bold">
               a good workout at the gym
@@ -27,25 +27,25 @@ function About() {
             </span>{" "}
             to relieve daily stress.
           </p>
-          <p className="text-md md:text-xl lg:text-2xl">
+          <p className="text-lg md:text-xl lg:text-2xl">
             I like to go for hikes, go to{" "}
             <span className="text-emerald-900 font-bold">local events</span> and
             hangout in within a community or with friends.
           </p>
-          <p className="text-md md:text-xl lg:text-2xl">
+          <p className="text-lg md:text-xl lg:text-2xl">
             Love to share ideas and good laughs/jokes with like-minded
             individuals, positive interactions and{" "}
             <span className="text-emerald-900 font-bold">
               meaningful relationships.
             </span>{" "}
           </p>
-          <p className="text-md md:text-xl lg:text-2xl">
+          <p className="text-lg md:text-xl lg:text-2xl">
             My favourite foods are sushi,{" "}
             <span className="text-emerald-900 font-bold">Smash Burgers</span>,
             hearty salads, and{" "}
             <span className="text-emerald-900 font-bold">Pizza</span>.
           </p>
-          <p className="text-md md:text-xl lg:text-2xl">
+          <p className="text-lg md:text-xl lg:text-2xl">
             I love to{" "}
             <span className="text-emerald-900 font-bold">watch sports</span> and{" "}
             <span className="text-emerald-900 font-bold">paint</span> when I
@@ -58,12 +58,12 @@ function About() {
           Connect
         </h2>
 
-        <p className="text-md md:text-xl lg:text-2xl">
+        <p className="text-lg md:text-xl lg:text-2xl">
           You can{" "}
           <span className="text-emerald-900 font-bold">connect with me</span> in
           any of the following ways:
         </p>
-        <div className="text-md md:text-xl lg:text-2xl">
+        <div className="text-lg md:text-xl lg:text-2xl">
           <ul>
             <li className="text-emerald-900 font-bold">
               Github:{" "}
