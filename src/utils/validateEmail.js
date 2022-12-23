@@ -6,5 +6,5 @@ export default function validateEmail(email) {
 
 export function validateName(name) {
   var re = /^[a-z]+$/i;
-  return re.text(String(name).toLowerCase());
+  return re.test(String(name).toLowerCase());
 }

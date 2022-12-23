@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./index.css";
 import validateEmail from "../../utils/validateEmail";
 import validateName from "../../utils/validateEmail";
@@ -8,14 +8,14 @@ import emailjs from "@emailjs/browser";
 
 function ContactMeForm() {
   const [errorMessage, setErrorMessage] = useState("");
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const [formState, setFormState] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
 
-  console.log(emailjs);
-  const { name, email, message } = formState;
+  // const { name, email, message } = formState;
+  const formRef = useRef();
 
   //   handleChangeInForm to get values from user input
 
@@ -33,7 +33,9 @@ function ContactMeForm() {
         setErrorMessage("");
       }
     } else if (e.target.name === "name") {
+      console.log(e.target.value);
       const isValidName = validateName(e.target.value);
+      console.log(isValidName);
       if (!isValidName) {
         setErrorMessage(
           "Name is invalid.. Please enter a valid name (no numbers or symbols)"
@@ -50,9 +52,9 @@ function ContactMeForm() {
     }
     // if there's no errors while taking input, everything is valid, then setFormState
     // use the spread operator ...formState,
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-    }
+    // if (!errorMessage) {
+    //   setFormState({ ...formState, [e.target.name]: e.target.value });
+    // }
   }
   function handleSubmitForm(e) {
     e.preventDefault();
@@ -60,12 +62,30 @@ function ContactMeForm() {
     if (!errorMessage) {
       // send form using emailjs
       // if there's no errors and there's input of something, send form
-      var userName = validateName(e.target[0].value);
-      var userEmail = validateEmail(e.target[1].value);
+      var userName = e.target[0].value;
+      var userEmail = e.target[1].value;
       var userMessage = e.target[2].value;
 
+      console.log(userName, userEmail, userMessage);
+
       if (!errorMessage && userName && userEmail && userMessage) {
-        console.log("Submit Valid Form", formState);
+        // emailjs sendform!
+        console.log(formRef.current);
+        emailjs
+          .sendForm(
+            "service_952vhth",
+            "template_3v5nih4",
+            formRef.current,
+            "user_ZphL0omOEOMciiE7xbnSV"
+          )
+          .then(
+            function (response) {
+              console.log("response:", response.status, response.text);
+            },
+            function (error) {
+              console.log("failed!", error);
+            }
+          );
       } else {
         setErrorMessage(
           "Invalid Name, Email or Message.. Please check again before you re-submit"
@@ -79,6 +99,7 @@ function ContactMeForm() {
         Contact me
       </h1>
       <form
+        ref={formRef}
         id="contact-form"
         onSubmit={handleSubmitForm}
         className="contact-form mx-auto md:w-4/5"
@@ -90,7 +111,7 @@ function ContactMeForm() {
           <input
             name="name"
             type="text"
-            defaultValue={name}
+            // defaultValue={name}
             onBlur={handleChangeInForm}
           ></input>
         </div>
@@ -101,7 +122,7 @@ function ContactMeForm() {
           <input
             name="email"
             type="email"
-            defaultValue={email}
+            // defaultValue={email}
             onBlur={handleChangeInForm}
           ></input>
         </div>
@@ -112,7 +133,7 @@ function ContactMeForm() {
           <textarea
             name="message"
             placeholder="Send me a message!"
-            defaultValue={message}
+            // defaultValue={message}
             onBlur={handleChangeInForm}
           ></textarea>
         </div>
