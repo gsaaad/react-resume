@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./index.css";
 import validateEmail from "../../utils/validateEmail";
 import errorIcon from "../../assets/img/circle-exclamation-solid.svg";
+import emailjs from "@emailjs/browser";
 
 function ContactMeForm() {
   const [errorMessage, setErrorMessage] = useState("");
@@ -10,6 +11,8 @@ function ContactMeForm() {
     email: "",
     message: "",
   });
+
+  console.log(emailjs);
   const { name, email, message } = formState;
 
   //   handleChangeInForm to get values from user input
@@ -45,6 +48,7 @@ function ContactMeForm() {
     e.preventDefault();
     // if there's no errors, send form
     if (!errorMessage) {
+      // send form using emailjs
       console.log("Submit Form", formState);
     }
   }
